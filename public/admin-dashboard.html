@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-100 h-full">
+
+<div class="flex min-h-screen">
+    
+  <!-- Sidebar -->
+  <aside class="w-1/6 bg-gray-800 text-white flex flex-col items-center py-8 fixed h-full">
+    <h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
+    <ul class="space-y-4">
+      <li><a href="#" class="hover:text-blue-400">Dashboard</a></li>
+      <li><a href="#" class="hover:text-blue-400">Teachers</a></li>
+      <li><a href="#" class="hover:text-blue-400">Students</a></li>
+      <li><a href="#" class="hover:text-blue-400">Subjects</a></li>
+      <li><a href="#" class="hover:text-blue-400">Timetable</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 px-8 pt-12 flex gap-6 ml-[16.666667%]">
+    <!-- Left Column (Cards) -->
+    <section class="w-1/2 space-y-6">
+
+      <!-- Card Template -->
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-calendar text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">Create Timetable</h3>
+              <p class="text-sm">Update Subject Details</p>
+              <p class="text-sm">Delete Subject Details</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-user-plus text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">New Teacher</h3>
+              <p class="text-sm">Add New Teacher</p>
+              <p class="text-sm">Create New Teacher Credentials</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-address-book text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">Manage Teacher</h3>
+              <p class="text-sm">Update Teacher Details</p>
+              <p class="text-sm">Delete Teacher Details</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-user-circle-plus text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">New Student</h3>
+              <p class="text-sm">Add New Student</p>
+              <p class="text-sm">Add Student Details</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-student text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">Manage Student</h3>
+              <p class="text-sm">Update Subject Details</p>
+              <p class="text-sm">Delete Subject Details</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-book-open-text text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">New Subject</h3>
+              <p class="text-sm">Add New Subject</p>
+              <p class="text-sm">Add Subject Details</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4">
+            <i class="ph ph-books text-3xl"></i>
+            <div>
+              <h3 class="text-xl font-semibold">Manage Subject</h3>
+              <p class="text-sm">Update Subject Details</p>
+              <p class="text-sm">Delete Subject Details</p>
+            </div>
+          </div>
+          <i class="ph ph-arrow-right text-2xl"></i>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Right Column (Profile or Image) -->
+    <section class="w-1/2 flex justify-center items-start">
+      <div class="bg-white rounded-xl p-6 shadow-lg text-center w-2/3 sticky top-12">
+        <img src="Chandan Kumar_CSE_29.jpg" alt="Profile" class="mx-auto rounded-full mb-4 w-24 h-24">
+        <h2 class="text-xl font-semibold text-gray-800">Admin Name</h2>
+        <p class="text-gray-600">Administrator</p>
+        <button class="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">View Profile</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
