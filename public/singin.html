@@ -88,7 +88,10 @@
             <label class="flex items-center text-lg font-semibold text-black dark:text-white">
               <span class="mr-3 text-2xl">🔒</span>Password
             </label>
-            <input type="password" name="password" placeholder="Create Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+            <div class="relative">
+              <input type="password" id="signupPassword" name="password" placeholder="Create Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+              <button type="button" onclick="togglePassword('signupPassword')" class="absolute top-3 right-4 text-xl">👁</button>
+            </div>
           </div>
 
           <!-- Confirm Password -->
@@ -96,7 +99,10 @@
             <label class="flex items-center text-lg font-semibold text-black dark:text-white">
               <span class="mr-3 text-2xl">🔒</span>Confirm Password
             </label>
-            <input type="password" name="confirmPassword" placeholder="Confirm Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+            <div class="relative">
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+              <button type="button" onclick="togglePassword('confirmPassword')" class="absolute top-3 right-4 text-xl">👁</button>
+            </div>
           </div>
 
           <!-- User Type -->
@@ -105,9 +111,9 @@
               <span class="mr-3 text-2xl">👥</span>You are?
             </label>
             <div class="mt-2 flex gap-4 text-black dark:text-white">
-              <label><input type="radio" name="userType" value="student" checked onchange="toggleSemester()" /> Student</label>
-              <label><input type="radio" name="userType" value="teacher" onchange="toggleSemester()" /> Teacher</label>
-              <label><input type="radio" name="userType" value="admin" onchange="toggleSemester()" /> Admin</label>
+              <label><input type="radio" name="userType" value="student" checked onchange="toggleRoleFields()" /> Student</label>
+              <label><input type="radio" name="userType" value="teacher" onchange="toggleRoleFields()" /> Teacher</label>
+              <label><input type="radio" name="userType" value="admin" onchange="toggleRoleFields()" /> Admin</label>
             </div>
           </div>
 
@@ -116,7 +122,7 @@
             <label class="flex items-center text-lg font-semibold text-black dark:text-white">
               <span class="mr-3 text-2xl">📚</span>Current Semester
             </label>
-            <select name="currentSemester" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
+            <select name="semester" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
               <option value="">Choose Semester</option>
               <option value="1">Semester 1</option>
               <option value="2">Semester 2</option>
@@ -127,6 +133,31 @@
               <option value="7">Semester 7</option>
               <option value="8">Semester 8</option>
             </select>
+          </div>
+
+          <!-- Department (Teacher only) -->
+          <div id="departmentField" class="mt-6 hidden">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🏛️</span>Department
+            </label>
+            <select name="department" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
+              <option value="">Choose Department</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+            </select>
+          </div>
+
+          <!-- Role Title (Admin only) -->
+          <div id="roleTitleField" class="mt-6 hidden">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">👔</span>Role Title
+            </label>
+            <input type="text" name="roleTitle" placeholder="Enter Your Role Title" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" />
           </div>
 
           <!-- Signup Button -->
@@ -160,8 +191,8 @@
               <span class="mr-3 text-2xl">🔒</span>Password
             </label>
             <div class="relative">
-              <input type="password" id="password" name="password" placeholder="Enter Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
-              <button type="button" onclick="togglePassword('password')" class="absolute top-3 right-4 text-xl">👁</button>
+              <input type="password" id="loginPassword" name="password" placeholder="Enter Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+              <button type="button" onclick="togglePassword('loginPassword')" class="absolute top-3 right-4 text-xl">👁</button>
             </div>
           </div>
 
@@ -197,6 +228,108 @@
   </div>
 
   <!-- JavaScript -->
- <script src="script.js"></script>
+  <script>
+    // Toggle between login and signup forms
+    function toggleForm(formType) {
+      if (formType === 'login') {
+        document.getElementById('signup').classList.add('hidden');
+        document.getElementById('login').classList.remove('hidden');
+      } else {
+        document.getElementById('login').classList.add('hidden');
+        document.getElementById('signup').classList.remove('hidden');
+      }
+    }
+
+    // Toggle password visibility
+    function togglePassword(fieldId) {
+      const passwordField = document.getElementById(fieldId);
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+    }
+
+    // Show/hide role-specific fields
+    function toggleRoleFields() {
+      const userType = document.querySelector('input[name="userType"]:checked').value;
+      
+      // Semester field (for students)
+      const semesterField = document.getElementById('semesterField');
+      semesterField.style.display = userType === 'student' ? 'block' : 'none';
+      
+      // Department field (for teachers)
+      const departmentField = document.getElementById('departmentField');
+      departmentField.style.display = userType === 'teacher' ? 'block' : 'none';
+      
+      // Role title field (for admins)
+      const roleTitleField = document.getElementById('roleTitleField');
+      roleTitleField.style.display = userType === 'admin' ? 'block' : 'none';
+    }
+
+    // Dark mode toggle
+    document.getElementById('darkToggle').addEventListener('change', function() {
+      document.documentElement.classList.toggle('dark', this.checked);
+    });
+
+    // Initialize dark mode based on preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.getElementById('darkToggle').checked = true;
+      document.documentElement.classList.add('dark');
+    }
+
+    // Form submission handlers
+    document.getElementById('signupForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData.entries());
+      
+      try {
+        const response = await fetch('/signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        if (response.ok) {
+          alert('Signup successful!');
+          window.location.href = result.redirect;
+        } else {
+          alert(result.message || 'Signup failed');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred during signup');
+      }
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData.entries());
+      
+      try {
+        const response = await fetch('/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        if (response.ok) {
+          alert('Login successful!');
+          window.location.href = result.redirect;
+        } else {
+          alert(result.message || 'Login failed');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred during login');
+      }
+    });
+  </script>
+   <script src="script.js"></script>
 </body>
 </html>
