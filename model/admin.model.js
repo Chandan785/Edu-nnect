@@ -1,7 +1,7 @@
-// models/Admin.js
+// models/Teacher.js
 const mongoose = require('mongoose');
 
-const adminSchema = new mongoose.Schema({
+const teacherSchema = new mongoose.Schema({
   username: {
     type: String,
     required: true
@@ -11,10 +11,13 @@ const adminSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  role: {
+  department: {
     type: String,
-    required: true,
-    default: 'admin'
+    required: true
+  },
+  year: {
+    type: Number,
+    required: true
   },
   password: {
     type: String,
@@ -22,4 +25,4 @@ const adminSchema = new mongoose.Schema({
   }
 },{timestamps: true});
 
-module.exports = mongoose.model('Admin', adminSchema);
+module.exports = mongoose.model('Teacher', Schema);

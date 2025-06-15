@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Signup Page</title>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .toggle-class {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 3.5rem;
+      height: 1.75rem;
+      background: #e2e8f0;
+      border-radius: 3rem;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      transition: all .3s;
+    }
+    .toggle-class:checked {
+      background: #1e293b;
+    }
+    .toggle-class::after {
+      content: '';
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 0.125rem;
+      left: 0.125rem;
+      transition: all .3s;
+    }
+    .toggle-class:checked::after {
+      left: calc(100% - 1.5rem - 0.125rem);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 dark:text-white transition duration-300">
+  <!-- Dark Mode Toggle -->
+  <label class="flex items-center gap-2 p-4">
+    <input type="checkbox" id="darkToggle" class="toggle-class" />
+    <span>Dark Mode</span>
+  </label>
+
+  <!-- WRAPPER -->
+  <div class="flex flex-col items-center justify-center min-h-screen py-12">
+    
+    <!-- SIGNUP SECTION -->
+    <div id="signup" class="flex w-[70rem] shadow-xl rounded-xl transition duration-500">
+      <!-- Left Panel -->
+      <div class="w-1/4 bg-blue-600 text-white rounded-l-xl flex flex-col items-center justify-center p-6">
+        <h2 class="text-3xl font-bold">Already Here?</h2>
+        <button onclick="toggleForm('login')" class="mt-10 h-12 w-36 rounded-xl bg-white text-black text-xl font-semibold hover:rounded-3xl hover:bg-gray-100">
+          Login
+        </button>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="w-3/4 bg-white dark:bg-gray-800 flex items-center justify-center rounded-r-xl">
+        <form id="signupForm" class="w-full max-w-md p-8" enctype="multipart/form-data">
+          <h1 class="text-4xl font-semibold text-center text-black dark:text-white">Create Account</h1>
+
+          <!-- Full Name -->
+          <div class="mt-8">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">👤</span>Full Name
+            </label>
+            <input type="text" name="FullName" placeholder="Enter Your Full Name" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+          </div>
+
+          <!-- Username -->
+          <div class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">👤</span>Username
+            </label>
+            <input type="text" name="Username" placeholder="Enter Your Username" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+          </div>
+
+          <!-- Email -->
+          <div class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">📧</span>Email
+            </label>
+            <input type="email" name="email" placeholder="Enter Your Email" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+          </div>
+
+          <!-- Profile Picture -->
+          <div class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🖼️</span>Profile Picture
+            </label>
+            <input type="file" name="avatar" accept="image/*" class="w-full mt-2 text-black dark:text-white" required />
+          </div>
+
+          <!-- Password -->
+          <div class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🔒</span>Password
+            </label>
+            <div class="relative">
+              <input type="password" id="signupPassword" name="password" placeholder="Create Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+              <button type="button" onclick="togglePassword('signupPassword')" class="absolute top-3 right-4 text-xl">👁</button>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🔒</span>Confirm Password
+            </label>
+            <div class="relative">
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+              <button type="button" onclick="togglePassword('confirmPassword')" class="absolute top-3 right-4 text-xl">👁</button>
+            </div>
+          </div>
+
+          <!-- User Type -->
+          <div class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">👥</span>You are?
+            </label>
+            <div class="mt-2 flex gap-4 text-black dark:text-white">
+              <label><input type="radio" name="userType" value="student" checked onchange="toggleRoleFields()" /> Student</label>
+              <label><input type="radio" name="userType" value="teacher" onchange="toggleRoleFields()" /> Teacher</label>
+              <label><input type="radio" name="userType" value="admin" onchange="toggleRoleFields()" /> Admin</label>
+            </div>
+          </div>
+
+          <!-- Roll No (Student only) -->
+          <div id="rollnoField" class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🎓</span>Roll Number
+            </label>
+            <input type="text" name="rollno" placeholder="Enter Your Roll Number" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" />
+          </div>
+
+          <!-- Year (Student/Teacher) -->
+          <div id="yearField" class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">📅</span>Year
+            </label>
+            <select name="year" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
+              <option value="1">First Year</option>
+              <option value="2">Second Year</option>
+              <option value="3">Third Year</option>
+              <option value="4">Fourth Year</option>
+            </select>
+          </div>
+
+          <!-- Department (Student/Teacher) -->
+          <div id="departmentField" class="mt-6">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🏛️</span>Department
+            </label>
+            <select name="department" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
+              <option value="Computer Science">Computer Science</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+            </select>
+          </div>
+           
+          <!-- Admin Role Fields -->
+          <div id="adminFields" class="mt-6 hidden">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">👔</span>Role Title
+            </label>
+            <input type="text" name="role" placeholder="Enter Your Admin Role" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" value="admin" readonly />
+          </div>
+
+          <!-- Signup Button -->
+          <div class="mt-10 flex justify-center">
+            <button type="submit" class="h-12 w-36 rounded-xl bg-blue-600 text-xl font-semibold text-white hover:rounded-3xl hover:bg-blue-800">
+              Sign up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- LOGIN SECTION -->
+    <div id="login" class="hidden mt-16 flex w-[70rem] shadow-xl rounded-xl transition duration-500">
+      <!-- Login Form -->
+      <div class="w-3/4 bg-white dark:bg-gray-800 flex items-center justify-center rounded-l-xl">
+        <form id="loginForm" class="w-full max-w-md p-8">
+          <h1 class="text-4xl font-semibold text-center text-black dark:text-white">Login to your account</h1>
+
+          <!-- Email -->
+          <div class="mt-14">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">📧</span>Email
+            </label>
+            <input type="email" name="email" placeholder="Enter Your Email" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+          </div>
+
+          <!-- Password -->
+          <div class="mt-8">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">🔒</span>Password
+            </label>
+            <div class="relative">
+              <input type="password" id="loginPassword" name="password" placeholder="Enter Your Password" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700 shadow-md hover:shadow-inner" required />
+              <button type="button" onclick="togglePassword('loginPassword')" class="absolute top-3 right-4 text-xl">👁</button>
+            </div>
+          </div>
+
+          <!-- User Type -->
+          <div class="mt-8">
+            <label class="flex items-center text-lg font-semibold text-black dark:text-white">
+              <span class="mr-3 text-2xl">👤</span>You are?
+            </label>
+            <div class="mt-2 flex gap-4 text-black dark:text-white">
+              <label><input type="radio" name="userType" value="student" checked /> Student</label>
+              <label><input type="radio" name="userType" value="teacher" /> Teacher</label>
+              <label><input type="radio" name="userType" value="admin" /> Admin</label>
+            </div>
+          </div>
+
+          <!-- Login Button -->
+          <div class="mt-10 flex justify-center">
+            <button type="submit" class="h-12 w-36 rounded-xl bg-blue-600 text-xl font-semibold text-white hover:rounded-3xl hover:bg-blue-800">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="w-1/4 bg-blue-600 text-white rounded-r-xl flex flex-col items-center justify-center p-6">
+        <h2 class="text-3xl font-bold">New Here?</h2>
+        <button onclick="toggleForm('signup')" class="mt-10 h-12 w-36 rounded-xl bg-white text-black text-xl font-semibold hover:rounded-3xl hover:bg-gray-100">
+          Sign up
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="formhandler.js"></script>
+</body>
+</html>

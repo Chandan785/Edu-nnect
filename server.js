@@ -176,7 +176,7 @@ app.post('/logout', (req, res) => {
     res.json({ message: 'Logged out successfully' });
   });
 });
-
+ 
 // Error Handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
