@@ -1,5 +1,3 @@
-// formhandler.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signupForm');
     const loginForm = document.getElementById('loginForm');
@@ -13,54 +11,58 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// --- Loader SVG Icon ---
+const loaderIcon = `<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
+
 /**
  * Handles the signup form submission.
  */
 async function handleSignup(event) {
-    event.preventDefault(); // Prevent default form submission
-    
+    event.preventDefault();
     const form = event.target;
+    const button = form.querySelector('button[type="submit"]');
+    const originalButtonText = button.innerHTML;
+
+    // --- Show loader ---
+    button.disabled = true;
+    button.innerHTML = `${loaderIcon} <span>Signing up...</span>`;
+
     const formData = new FormData(form);
     const userType = formData.get('userType');
     
-    // 1. Determine the correct API endpoint based on user type
     let apiUrl = '';
     switch (userType) {
-        case 'student':
-            apiUrl = 'http://localhost:3000/api/v1/users/ragister';
-            break;
-        case 'teacher':
-            apiUrl = 'http://localhost:3000/api/v1/teachers/ragister';
-            break;
-        case 'admin':
-            apiUrl = 'http://localhost:3000/api/v1/admins/ragister';
-            break;
+        case 'student': apiUrl = 'http://localhost:3000/api/v1/users/ragister'; break;
+        case 'teacher': apiUrl = 'http://localhost:3000/api/v1/teachers/ragister'; break;
+        case 'admin': apiUrl = 'http://localhost:3000/api/v1/admins/ragister'; break;
         default:
             alert('Please select a user type.');
+            button.disabled = false;
+            button.innerHTML = originalButtonText;
             return;
     }
 
-    // 2. Simple password confirmation check
     if (formData.get('password') !== formData.get('confirmPassword')) {
         alert("Passwords do not match!");
+        // --- Hide loader on error ---
+        button.disabled = false;
+        button.innerHTML = originalButtonText;
         return;
     }
     
     try {
-        // 3. Make the API call using axios
-        const response = await axios.post(apiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
+        await axios.post(apiUrl, formData, {
+            headers: { 'Content-Type': 'multipart/form-data' }
         });
-        
-        console.log('Signup success:', response.data);
         alert('Registration successful! Please log in.');
-        window.location.reload(); // Reload to switch to the login form or clear fields
-
+        window.location.reload();
     } catch (error) {
         console.error('Signup error:', error.response ? error.response.data : error.message);
-        alert(`Registration failed: ${error.response?.data?.message || 'Please check your details and try again.'}`);
+        alert(`Registration failed: ${error.response?.data?.message || 'Please check your details.'}`);
+    } finally {
+        // --- Hide loader after completion ---
+        button.disabled = false;
+        button.innerHTML = originalButtonText;
     }
 }
 
@@ -69,67 +71,62 @@ async function handleSignup(event) {
  */
 async function handleLogin(event) {
     event.preventDefault();
-
     const form = event.target;
+    const button = form.querySelector('button[type="submit"]');
+    const originalButtonText = button.innerHTML;
+
+    // --- Show loader ---
+    button.disabled = true;
+    button.innerHTML = `${loaderIcon} <span>Logging in...</span>`;
+
     const formData = new FormData(form);
     const userType = formData.get('userType');
     
-    // Extract data into a plain object for JSON submission
     const loginData = {
         email: formData.get('email'),
-        Username: formData.get('email'), // Backend accepts either email or username
+        Username: formData.get('email'),
         password: formData.get('password')
     };
     
-    // 1. Determine API endpoint and redirect path
     let apiUrl = '';
     let redirectUrl = '';
     switch (userType) {
-        case 'student':
-            apiUrl = 'http://localhost:3000/api/v1/users/login';
-            redirectUrl = 'student-dashboard.html';
-            break;
-        case 'teacher':
-            apiUrl = 'http://localhost:3000/api/v1/teachers/login';
-            redirectUrl = 'teacher-dashboard.html';
-            break;
-        case 'admin':
-            apiUrl = 'http://localhost:3000/api/v1/admins/login';
-            redirectUrl = 'admin-dashboard.html';
-            break;
+        case 'student': apiUrl = 'http://localhost:3000/api/v1/users/login'; redirectUrl = 'student-dashboard.html'; break;
+        case 'teacher': apiUrl = 'http://localhost:3000/api/v1/teachers/login'; redirectUrl = 'teacher-dashboard.html'; break;
+        case 'admin': apiUrl = 'http://localhost:3000/api/v1/admins/login'; redirectUrl = 'admin-dashboard.html'; break;
         default:
             alert('Please select a user type.');
+            button.disabled = false;
+            button.innerHTML = originalButtonText;
             return;
     }
 
     try {
-        // 2. Make the API call
-        const response = await axios.post(apiUrl, loginData, {
-            withCredentials: true // Crucial for sending/receiving cookies
-        });
-
-        console.log('Login success:', response.data);
+        const response = await axios.post(apiUrl, loginData);
         const { user, accessToken } = response.data.data;
 
-        // 3. Store user info and token for use in the dashboard
         localStorage.setItem('user', JSON.stringify(user));
         localStorage.setItem('accessToken', accessToken);
+        localStorage.setItem('userType', userType);
 
-        // 4. Redirect to the appropriate dashboard
         window.location.href = redirectUrl;
-
     } catch (error) {
         console.error('Login error:', error.response ? error.response.data : error.message);
         alert(`Login failed: ${error.response?.data?.message || 'Invalid credentials.'}`);
+        // --- Hide loader after error ---
+        button.disabled = false;
+        button.innerHTML = originalButtonText;
     }
 }
 
 /**
  * Toggles visibility of role-specific fields in the signup form.
- * This function is called by the onchange event in your HTML.
  */
 function toggleRoleFields() {
-    const userType = document.querySelector('input[name="userType"]:checked').value;
+    const userTypeInput = document.querySelector('input[name="userType"]:checked');
+    if (!userTypeInput) return;
+    
+    const userType = userTypeInput.value;
     
     document.getElementById('rollnoField').style.display = 'none';
     document.getElementById('yearField').style.display = 'none';
@@ -147,5 +144,8 @@ function toggleRoleFields() {
         document.getElementById('adminFields').style.display = 'block';
     }
 }
+
 // Initialize fields on page load
-toggleRoleFields();
+if (document.getElementById('signupForm')) {
+    toggleRoleFields();
+}

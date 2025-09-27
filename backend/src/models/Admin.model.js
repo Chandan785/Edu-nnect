@@ -4,6 +4,10 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
 const adminSchema = new mongoose.Schema({
+   FullName:{
+   type:String,
+   required:true
+  },
   Username: {
     type: String,
     required: true
@@ -12,6 +16,10 @@ const adminSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true
+  },
+  avatar:{
+     type:String,
+     required:true
   },
   role: {
     type: String,

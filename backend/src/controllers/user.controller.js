@@ -252,10 +252,11 @@ const getCurrentUser = asyncHandler(async (req, res) => {
 })
 
 
+ 
 // upadate user profile
 const updateUserProfile = asyncHandler(async (req, res) => {
-  const { Username, email } = req.body
-  if (!Username || !email) {
+  const { FullName, email } = req.body; // Changed from Username
+  if (!FullName || !email) {
     throw new ApiError(400, "Full name and email are required");
   }
 
@@ -263,17 +264,17 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     req.user?._id,
     {
       $set: {
-        Username,
+        FullName, // Changed from Username
         email,
       },
     },
     {
       new: true,
-    
     }
   ).select("-password");
+  
   res.status(200).json(new ApiResponse(200, user, "User profile updated successfully"));
-})
+});
 
 
 //update user avatar

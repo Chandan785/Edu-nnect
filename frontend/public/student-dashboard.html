@@ -23,7 +23,6 @@
 </head>
 <body class="overflow-hidden">
     <div class="flex h-screen">
-        <!-- Side Navigation -->
         <div class="w-64 bg-indigo-900 text-white shadow-lg">
             <div class="p-6 flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center">
@@ -48,25 +47,22 @@
                     <i class="fas fa-chart-bar mr-3"></i>
                     Grades
                 </a>
-                <a href="#" class="nav-item flex items-center px-6 py-3 text-indigo-200 hover:text-white">
-                    <i class="fas fa-comments mr-3"></i>
-                    Messages
-                </a>
                 <a href="timetable.html" class="nav-item flex items-center px-6 py-3 text-indigo-200 hover:text-white transition">
                    <i class="fas fa-calendar-alt mr-3"></i>
                  View Timetable
                 </a>
-
-                <a href="#" class="nav-item flex items-center px-6 py-3 text-indigo-200 hover:text-white">
+                <a href="#" id="settingsBtn" class="nav-item flex items-center px-6 py-3 text-indigo-200 hover:text-white">
                     <i class="fas fa-cog mr-3"></i>
                     Settings
+                </a>
+                <a href="#" id="logoutBtn" class="nav-item flex items-center px-6 py-3 mt-4 text-red-400 hover:text-white hover:bg-red-500/50">
+                    <i class="fas fa-sign-out-alt mr-3"></i>
+                    Logout
                 </a>
             </nav>
         </div>
 
-        <!-- Main Content -->
         <div class="flex-1 overflow-y-auto">
-            <!-- Header -->
             <header class="bg-white shadow-sm">
                 <div class="flex justify-between items-center px-8 py-4">
                     <h2 class="text-2xl font-bold text-gray-800">Student Dashboard</h2>
@@ -76,138 +72,65 @@
                             <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="w-8 h-8 rounded-full">
-                            <span class="text-gray-700 font-medium">Sarah Johnson</span>
+                            <img src="public/placeholder.png" alt="Profile" class="w-8 h-8 rounded-full object-cover">
+                            <span class="text-gray-700 font-medium">Student Name</span>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <!-- Dashboard Content -->
             <main class="p-8">
                 <div class="flex">
-                    <!-- Cards Section -->
                     <div class="w-1/2 pr-6 space-y-6">
-                        <!-- View Attendance Card -->
-                        <a href="/viewAttendance" class="block">
-                            <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:border-indigo-500 border-l-4 border-white">
+                        <a href="#" class="block">
+                            <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
                                 <div class="p-6 flex items-start">
                                     <div class="bg-indigo-100 p-3 rounded-lg mr-4">
                                         <i class="fas fa-user-check text-indigo-600 text-xl"></i>
                                     </div>
                                     <div class="flex-1">
-                                        <div class="flex justify-between items-start">
-                                            <h3 class="text-lg font-semibold text-gray-800">View Attendance</h3>
-                                            <i class="fas fa-chevron-right text-gray-400 mt-1"></i>
-                                        </div>
+                                        <h3 class="text-lg font-semibold text-gray-800">View Attendance</h3>
                                         <p class="text-gray-500 mt-1">View your attendance records</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-
-                        <!-- View Marks Card -->
-                        <a href="/viewMarks" class="block">
-                            <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:border-green-500 border-l-4 border-white">
+                        <a href="#" class="block">
+                            <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
                                 <div class="p-6 flex items-start">
                                     <div class="bg-green-100 p-3 rounded-lg mr-4">
                                         <i class="fas fa-chart-line text-green-600 text-xl"></i>
                                     </div>
                                     <div class="flex-1">
-                                        <div class="flex justify-between items-start">
-                                            <h3 class="text-lg font-semibold text-gray-800">View Marks</h3>
-                                            <i class="fas fa-chevron-right text-gray-400 mt-1"></i>
-                                        </div>
-                                        <p class="text-gray-500 mt-1">View your marks and grades for each subject</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Discussion Forum Card -->
-                        <a href="/discussionForum" class="block">
-                            <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:border-blue-500 border-l-4 border-white">
-                                <div class="p-6 flex items-start">
-                                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                                        <i class="fas fa-comments text-blue-600 text-xl"></i>
-                                    </div>
-                                    <div class="flex-1">
-                                        <div class="flex justify-between items-start">
-                                            <h3 class="text-lg font-semibold text-gray-800">Discussion Forum</h3>
-                                            <i class="fas fa-chevron-right text-gray-400 mt-1"></i>
-                                        </div>
-                                        <p class="text-gray-500 mt-1">Discuss your doubts with teachers and classmates</p>
+                                        <h3 class="text-lg font-semibold text-gray-800">View Marks</h3>
+                                        <p class="text-gray-500 mt-1">View marks and grades</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Profile Section -->
                     <div class="w-1/2 pl-6">
                         <div class="bg-white rounded-xl shadow-md overflow-hidden">
                             <div class="bg-gradient-to-r from-indigo-500 to-purple-600 p-6 text-white">
                                 <div class="flex justify-between items-start">
                                     <div>
-                                        <h3 class="text-xl font-semibold">Sarah Johnson</h3>
+                                        <h3 class="text-xl font-semibold profile-card-name">Student Name</h3>
                                         <p class="text-indigo-100">Computer Science Student</p>
                                     </div>
-                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="w-16 h-16 rounded-full border-2 border-white">
+                                    <img src="public/placeholder.png" alt="Profile" class="w-16 h-16 rounded-full border-2 border-white object-cover">
                                 </div>
                             </div>
                             <div class="p-6">
-                                <div class="mb-6">
-                                    <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Academic Progress</h4>
-                                    <div class="space-y-4">
-                                        <div>
-                                            <div class="flex justify-between mb-1">
-                                                <span class="text-sm font-medium text-gray-700">Data Structures</span>
-                                                <span class="text-sm font-medium text-gray-700">85%</span>
-                                            </div>
-                                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                                <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
-                                            </div>
+                                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Upcoming Events</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-start">
+                                        <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                                            <i class="fas fa-calendar-day text-indigo-600"></i>
                                         </div>
                                         <div>
-                                            <div class="flex justify-between mb-1">
-                                                <span class="text-sm font-medium text-gray-700">Algorithms</span>
-                                                <span class="text-sm font-medium text-gray-700">72%</span>
-                                            </div>
-                                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                                <div class="bg-blue-500 h-2 rounded-full" style="width: 72%"></div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex justify-between mb-1">
-                                                <span class="text-sm font-medium text-gray-700">Database Systems</span>
-                                                <span class="text-sm font-medium text-gray-700">90%</span>
-                                            </div>
-                                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                                <div class="bg-purple-500 h-2 rounded-full" style="width: 90%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Upcoming Events</h4>
-                                    <div class="space-y-3">
-                                        <div class="flex items-start">
-                                            <div class="bg-indigo-100 p-2 rounded-lg mr-3">
-                                                <i class="fas fa-calendar-day text-indigo-600"></i>
-                                            </div>
-                                            <div>
-                                                <p class="font-medium text-gray-800">Midterm Exams</p>
-                                                <p class="text-sm text-gray-500">June 15 - June 20</p>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-blue-100 p-2 rounded-lg mr-3">
-                                                <i class="fas fa-laptop-code text-blue-600"></i>
-                                            </div>
-                                            <div>
-                                                <p class="font-medium text-gray-800">Project Submission</p>
-                                                <p class="text-sm text-gray-500">June 25</p>
-                                            </div>
+                                            <p class="font-medium text-gray-800">Midterm Exams</p>
+                                            <p class="text-sm text-gray-500">Starts Next Week</p>
                                         </div>
                                     </div>
                                 </div>
@@ -218,22 +141,169 @@
             </main>
         </div>
     </div>
+    
+    <div id="settingsModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+        <div class="bg-gray-100 rounded-lg shadow-2xl w-full max-w-4xl transform transition-all max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center p-4 border-b bg-white rounded-t-lg">
+                <h2 class="text-2xl font-bold text-gray-800">Profile Settings</h2>
+                <button id="closeModalBtn" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+            </div>
+            <div class="p-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <h3 class="text-lg font-semibold mb-4 text-gray-700">Profile Picture</h3>
+                            <img id="avatarPreview" src="public/placeholder.png" alt="Profile Avatar" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-gray-200">
+                            <form id="avatarForm">
+                                <label for="avatarInput" class="cursor-pointer bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                                    Change Picture
+                                </label>
+                                <input type="file" name="avatar" id="avatarInput" class="hidden" accept="image/*">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-semibold mb-6 text-gray-700">Account Details</h3>
+                            <form id="profileForm">
+                                <div class="mb-4">
+                                    <label for="fullName" class="block text-gray-600 font-medium mb-2">Full Name</label>
+                                    <input type="text" id="fullName" name="FullName" class="w-full px-4 py-2 border rounded-lg" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-600 font-medium mb-2">Email Address</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg" required>
+                                </div>
+                                <div class="text-right">
+                                    <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+                                        Save Changes
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const user = JSON.parse(localStorage.getItem('user'));
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('accessToken');
+            const userType = localStorage.getItem('userType');
+            let user = JSON.parse(localStorage.getItem('user'));
 
-        if (user) {
-            document.querySelectorAll('.font-medium').forEach(el => {
-                if(el.textContent.includes('Sarah Johnson')) el.textContent = user.FullName;
+            if (!user || !token || userType !== 'student') {
+                window.location.href = 'singin.html';
+                return;
+            }
+
+            const dashboardUsernames = document.querySelectorAll('.font-medium');
+            const dashboardAvatars = document.querySelectorAll('img[alt="Profile"]');
+            const profileCardName = document.querySelector('.profile-card-name');
+            const settingsBtn = document.getElementById('settingsBtn');
+            const logoutBtn = document.getElementById('logoutBtn');
+
+            const settingsModal = document.getElementById('settingsModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const avatarPreview = document.getElementById('avatarPreview');
+            const fullNameInput = document.getElementById('fullName');
+            const emailInput = document.getElementById('email');
+            const avatarInput = document.getElementById('avatarInput');
+            const profileForm = document.getElementById('profileForm');
+
+            function setupDashboard() {
+                dashboardUsernames.forEach(el => el.textContent = user.FullName);
+                dashboardAvatars.forEach(el => el.src = user.avatar || 'public/placeholder.png');
+                if(profileCardName) profileCardName.textContent = user.FullName;
+            }
+            setupDashboard();
+
+            function getApiUrl(path) {
+                return `http://localhost:3000/api/v1/users${path}`;
+            }
+            
+            function populateForm(userData) {
+                avatarPreview.src = userData.avatar || 'public/placeholder.png';
+                fullNameInput.value = userData.FullName || '';
+                emailInput.value = userData.email || '';
+            }
+
+            function openSettingsModal() {
+                populateForm(user);
+                settingsModal.classList.remove('hidden');
+            }
+
+            function closeSettingsModal() {
+                settingsModal.classList.add('hidden');
+            }
+
+            if (settingsBtn) {
+                settingsBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openSettingsModal();
+                });
+            }
+            
+            closeModalBtn.addEventListener('click', closeSettingsModal);
+            settingsModal.addEventListener('click', (e) => e.target === settingsModal && closeSettingsModal());
+
+            profileForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const updatedData = { FullName: fullNameInput.value, email: emailInput.value };
+                try {
+                    const response = await axios.patch(getApiUrl('/updateUserProfile'), updatedData, {
+                        headers: { 'Authorization': `Bearer ${token}` }
+                    });
+                    user = { ...user, ...response.data.data };
+                    localStorage.setItem('user', JSON.stringify(user));
+                    alert('Profile updated successfully!');
+                    setupDashboard();
+                    closeSettingsModal();
+                } catch (error) {
+                    alert(`Error: ${error.response?.data?.message || 'Update failed'}`);
+                }
             });
-            document.querySelectorAll('img[alt="Profile"]').forEach(el => {
-                if(user.avatar) el.src = user.avatar;
+
+            avatarInput.addEventListener('change', async () => {
+                const file = avatarInput.files[0];
+                if (!file) return;
+                const formData = new FormData();
+                formData.append('avatar', file);
+                try {
+                    const response = await axios.patch(getApiUrl('/update-avatar'), formData, {
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Content-Type': 'multipart/form-data'
+                        }
+                    });
+                    user = { ...user, avatar: response.data.data.avatar };
+                    localStorage.setItem('user', JSON.stringify(user));
+                    alert('Avatar updated successfully!');
+                    avatarPreview.src = user.avatar;
+                    setupDashboard();
+                } catch (error) {
+                    alert(`Error: ${error.response?.data?.message || 'Upload failed'}`);
+                }
             });
-        } else {
-            window.location.href = 'singin.html';
-        }
-    });
-</script>
+            
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    try {
+                        await axios.post(getApiUrl('/logout'), {}, {
+                            headers: { 'Authorization': `Bearer ${token}` }
+                        });
+                    } catch (error) {
+                        console.error("Server logout failed", error);
+                    } finally {
+                        localStorage.clear();
+                        window.location.href = 'singin.html';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -11,7 +11,6 @@
 
 <div class="flex min-h-screen">
     
-  <!-- Sidebar -->
   <aside class="w-1/6 bg-gray-800 text-white flex flex-col items-center py-8 fixed h-full">
     <h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
     <ul class="space-y-4">
@@ -20,151 +19,188 @@
       <li><a href="#" class="hover:text-blue-400">Students</a></li>
       <li><a href="#" class="hover:text-blue-400">Subjects</a></li>
       <li><a href="#" class="hover:text-blue-400">Timetable</a></li>
+      <li class="pt-4"><a href="#" id="settingsBtn" class="hover:text-blue-400">Settings</a></li>
+      <li><a href="#" id="logoutBtn" class="text-red-400 hover:text-red-300">Logout</a></li>
     </ul>
   </aside>
 
-  <!-- Main Content -->
   <main class="flex-1 px-8 pt-12 flex gap-6 ml-[16.666667%]">
-    <!-- Left Column (Cards) -->
     <section class="w-1/2 space-y-6">
-
-      <!-- Card Template -->
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-calendar text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">Create Timetable</h3>
-              <p class="text-sm">Update Subject Details</p>
-              <p class="text-sm">Delete Subject Details</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
+        <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-semibold">Welcome, Admin!</h3>
         </div>
-      </div>
-
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-user-plus text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">New Teacher</h3>
-              <p class="text-sm">Add New Teacher</p>
-              <p class="text-sm">Create New Teacher Credentials</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
-        </div>
-      </div>
-
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-address-book text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">Manage Teacher</h3>
-              <p class="text-sm">Update Teacher Details</p>
-              <p class="text-sm">Delete Teacher Details</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
-        </div>
-      </div>
-
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-user-circle-plus text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">New Student</h3>
-              <p class="text-sm">Add New Student</p>
-              <p class="text-sm">Add Student Details</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
-        </div>
-      </div>
-
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-student text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">Manage Student</h3>
-              <p class="text-sm">Update Subject Details</p>
-              <p class="text-sm">Delete Subject Details</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
-        </div>
-      </div>
-
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-book-open-text text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">New Subject</h3>
-              <p class="text-sm">Add New Subject</p>
-              <p class="text-sm">Add Subject Details</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
-        </div>
-      </div>
-
-      <div class="bg-blue-700 text-white p-6 rounded-xl shadow-lg hover:bg-blue-800 transition cursor-pointer">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-4">
-            <i class="ph ph-books text-3xl"></i>
-            <div>
-              <h3 class="text-xl font-semibold">Manage Subject</h3>
-              <p class="text-sm">Update Subject Details</p>
-              <p class="text-sm">Delete Subject Details</p>
-            </div>
-          </div>
-          <i class="ph ph-arrow-right text-2xl"></i>
-        </div>
-      </div>
-
     </section>
 
-    <!-- Right Column (Profile or Image) -->
     <section class="w-1/2 flex justify-center items-start">
       <div class="bg-white rounded-xl p-6 shadow-lg text-center w-2/3 sticky top-12">
-        <img src="Chandan Kumar_CSE_29.jpg" alt="Profile" class="mx-auto rounded-full mb-4 w-24 h-24">
+        <img src="public/placeholder.png" alt="Profile" class="mx-auto rounded-full mb-4 w-24 h-24 object-cover">
         <h2 class="text-xl font-semibold text-gray-800">Admin Name</h2>
         <p class="text-gray-600">Administrator</p>
-        <button class="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">View Profile</button>
       </div>
     </section>
   </main>
 </div>
 
+<div id="settingsModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+    <div class="bg-gray-100 rounded-lg shadow-2xl w-full max-w-4xl transform transition-all max-h-[90vh] overflow-y-auto">
+        <div class="flex justify-between items-center p-4 border-b bg-white rounded-t-lg">
+            <h2 class="text-2xl font-bold text-gray-800">Profile Settings</h2>
+            <button id="closeModalBtn" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+        </div>
+        <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md-col-span-1">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Profile Picture</h3>
+                        <img id="avatarPreview" src="public/placeholder.png" alt="Profile Avatar" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-gray-200">
+                        <form id="avatarForm">
+                            <label for="avatarInput" class="cursor-pointer bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                                Change Picture
+                            </label>
+                            <input type="file" name="avatar" id="avatarInput" class="hidden" accept="image/*">
+                        </form>
+                    </div>
+                </div>
+                <div class="md-col-span-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold mb-6 text-gray-700">Account Details</h3>
+                        <form id="profileForm">
+                            <div class="mb-4">
+                                <label for="fullName" class="block text-gray-600 font-medium mb-2">Full Name</label>
+                                <input type="text" id="fullName" name="FullName" class="w-full px-4 py-2 border rounded-lg" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-600 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg" required>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+                                    Save Changes
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const user = JSON.parse(localStorage.getItem('user'));
+        const token = localStorage.getItem('accessToken');
+        const userType = localStorage.getItem('userType');
+        let user = JSON.parse(localStorage.getItem('user'));
 
-        if (user) {
-            // Find the elements to update
-            const adminNameElement = document.querySelector('.text-center h2');
-            const profileImgElement = document.querySelector('.text-center img');
-
-            // Update them with user data
-            if (adminNameElement) adminNameElement.textContent = user.FullName;
-            if (profileImgElement && user.avatar) profileImgElement.src = user.avatar;
-        } else {
-            // If no user data, redirect to login
+        if (!user || !token || userType !== 'admin') {
             window.location.href = 'singin.html';
+            return;
+        }
+
+        const adminNameElement = document.querySelector('.text-center h2');
+        const profileImgElement = document.querySelector('.text-center img');
+        const settingsBtn = document.getElementById('settingsBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+
+        const settingsModal = document.getElementById('settingsModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const avatarPreview = document.getElementById('avatarPreview');
+        const fullNameInput = document.getElementById('fullName');
+        const emailInput = document.getElementById('email');
+        const avatarInput = document.getElementById('avatarInput');
+        const profileForm = document.getElementById('profileForm');
+
+        function setupDashboard() {
+            if (adminNameElement) adminNameElement.textContent = user.FullName;
+            // FIXED: Using local placeholder
+            if (profileImgElement) profileImgElement.src = user.avatar || 'public/placeholder.png';
+        }
+        
+        setupDashboard();
+
+        function getApiUrl(path) {
+            return `http://localhost:3000/api/v1/admins${path}`;
+        }
+
+        function populateForm(userData) {
+            // FIXED: Using local placeholder
+            avatarPreview.src = userData.avatar || 'public/placeholder.png';
+            fullNameInput.value = userData.FullName || '';
+            emailInput.value = userData.email || '';
+        }
+
+        function openSettingsModal() {
+            populateForm(user);
+            settingsModal.classList.remove('hidden');
+        }
+
+        function closeSettingsModal() {
+            settingsModal.classList.add('hidden');
+        }
+
+        if (settingsBtn) {
+            settingsBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openSettingsModal();
+            });
+        }
+
+        closeModalBtn.addEventListener('click', closeSettingsModal);
+        settingsModal.addEventListener('click', (e) => e.target === settingsModal && closeSettingsModal());
+
+        profileForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const updatedData = { FullName: fullNameInput.value, email: emailInput.value };
+            try {
+                const response = await axios.patch(getApiUrl('/updateUserProfile'), updatedData, {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                user = { ...user, ...response.data.data };
+                localStorage.setItem('user', JSON.stringify(user));
+                alert('Profile updated successfully!');
+                setupDashboard();
+                closeSettingsModal();
+            } catch (error) {
+                alert(`Error: ${error.response?.data?.message || 'Update failed'}`);
+            }
+        });
+
+        avatarInput.addEventListener('change', async () => {
+            const file = avatarInput.files[0];
+            if (!file) return;
+            const formData = new FormData();
+            formData.append('avatar', file);
+            try {
+                const response = await axios.patch(getApiUrl('/update-avatar'), formData, {
+                    headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'multipart/form-data' }
+                });
+                user = { ...user, avatar: response.data.data.avatar };
+                localStorage.setItem('user', JSON.stringify(user));
+                alert('Avatar updated successfully!');
+                avatarPreview.src = user.avatar;
+                setupDashboard();
+            } catch (error) {
+                alert(`Error: ${error.response?.data?.message || 'Upload failed'}`);
+            }
+        });
+        
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                try {
+                    await axios.post(getApiUrl('/logout'), {}, {
+                        headers: { 'Authorization': `Bearer ${token}` }
+                    });
+                } catch (error) {
+                    console.error("Server logout failed", error);
+                } finally {
+                    localStorage.clear();
+                    window.location.href = 'singin.html';
+                }
+            });
         }
     });
 </script>
-
 </body>
-
-
- 
-
 </html>
