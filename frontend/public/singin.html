@@ -4,11 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login/Signup Page</title>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .toggle-class {
@@ -64,7 +60,7 @@
 
       <!-- Signup Form -->
       <div class="w-3/4 bg-white dark:bg-gray-800 flex items-center justify-center rounded-r-xl">
-        <form id="signupForm" class="w-full max-w-md p-8" enctype="multipart/form-data">
+        <form action="/register" method="POST" id="signupForm" class="w-full max-w-md p-8" enctype="multipart/form-data">
           <h1 class="text-4xl font-semibold text-center text-black dark:text-white">Create Account</h1>
 
           <!-- Full Name -->
@@ -147,6 +143,7 @@
               <span class="mr-3 text-2xl">📅</span>Year
             </label>
             <select name="year" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
+              <option value="0">Choose Year</option>
               <option value="1">First Year</option>
               <option value="2">Second Year</option>
               <option value="3">Third Year</option>
@@ -160,6 +157,7 @@
               <span class="mr-3 text-2xl">🏛️</span>Department
             </label>
             <select name="department" class="w-full mt-2 rounded-md border-2 border-gray-400 px-3 py-2 text-black dark:text-white dark:bg-gray-700">
+              <option value="Branch name"> Choose Your branch </option>
               <option value="Computer Science">Computer Science</option>
               <option value="Electrical Engineering">Electrical Engineering</option>
               <option value="Mechanical Engineering">Mechanical Engineering</option>
@@ -192,7 +190,7 @@
     <div id="login" class="hidden mt-16 flex w-[70rem] shadow-xl rounded-xl transition duration-500">
       <!-- Login Form -->
       <div class="w-3/4 bg-white dark:bg-gray-800 flex items-center justify-center rounded-l-xl">
-        <form id="loginForm" class="w-full max-w-md p-8">
+        <form action="/login" method="POST" id="loginForm" class="w-full max-w-md p-8">
           <h1 class="text-4xl font-semibold text-center text-black dark:text-white">Login to your account</h1>
 
           <!-- Email -->
@@ -244,6 +242,13 @@
       </div>
     </div>
   </div>
+   
+    <script>
+        tailwind.config = {
+    darkMode: 'class',
+  }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="script.js"></script>
   <script src="formhandler.js"></script>
 </body>

@@ -141,5 +141,30 @@
   </main>
 </div>
 
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (user) {
+            // Find the elements to update
+            const adminNameElement = document.querySelector('.text-center h2');
+            const profileImgElement = document.querySelector('.text-center img');
+
+            // Update them with user data
+            if (adminNameElement) adminNameElement.textContent = user.FullName;
+            if (profileImgElement && user.avatar) profileImgElement.src = user.avatar;
+        } else {
+            // If no user data, redirect to login
+            window.location.href = 'singin.html';
+        }
+    });
+</script>
+
 </body>
+
+
+ 
+
 </html>

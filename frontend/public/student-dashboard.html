@@ -218,5 +218,22 @@
             </main>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (user) {
+            document.querySelectorAll('.font-medium').forEach(el => {
+                if(el.textContent.includes('Sarah Johnson')) el.textContent = user.FullName;
+            });
+            document.querySelectorAll('img[alt="Profile"]').forEach(el => {
+                if(user.avatar) el.src = user.avatar;
+            });
+        } else {
+            window.location.href = 'singin.html';
+        }
+    });
+</script>
 </body>
 </html>
