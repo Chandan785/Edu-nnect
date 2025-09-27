@@ -12,7 +12,7 @@ import {app} from './app.js';
 connectDB()
 .then(() => {
   app.listen(process.env.port || 8000, () => {
-    console.log(`Server is running on port ${process.env.port }`);
+    console.log(`Server is running on port http://localhost:${process.env.port }`);
   });
   console.log("✅ MongoDB connected");
 })
