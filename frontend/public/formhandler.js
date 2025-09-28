@@ -40,14 +40,14 @@ async function handleSignup(event) {
         case 'teacher': apiUrl = 'http://localhost:3000/api/v1/teachers/ragister'; break;
         case 'admin': apiUrl = 'http://localhost:3000/api/v1/admins/ragister'; break;
     
-       */
+    */  
 
         //this is for backend After live the backend folder of the project on server(render)
-         
+          
         case 'student': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/users/ragister'; break;
         case 'teacher': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/teachers/ragister'; break;
         case 'admin': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/admins/ragister'; break;
-       
+        
          
 
         default:
@@ -107,22 +107,22 @@ async function handleLogin(event) {
     let redirectUrl = '';
     switch (userType) {
         //this is for backend before live the backend folder of the project on server(render)
-      
+      /*
         
         case 'student': apiUrl = 'http://localhost:3000/api/v1/users/login'; redirectUrl = 'student-dashboard.html'; break;
         case 'teacher': apiUrl = 'http://localhost:3000/api/v1/teachers/login'; redirectUrl = 'teacher-dashboard.html'; break;
         case 'admin': apiUrl = 'http://localhost:3000/api/v1/admins/login'; redirectUrl = 'admin-dashboard.html'; break;
         
-        
+        */
 
         //this is for backend After live the backend folder of the project on server(render)
 
-    /*
+     
         case 'student': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/users/login'; redirectUrl = 'student-dashboard.html'; break;
         case 'teacher': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/teachers/login'; redirectUrl = 'teacher-dashboard.html'; break;
         case 'admin': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/admins/login'; redirectUrl = 'admin-dashboard.html'; break;
         
-        */
+        
         default:
             alert('Please select a user type.');
             button.disabled = false;

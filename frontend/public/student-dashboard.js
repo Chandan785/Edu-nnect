@@ -47,7 +47,7 @@
             function getApiUrl(path) { 
                  //this is for backend before live the backend folder of the project on server(render)
 
-              //  return `http://localhost:3000/api/v1/users${path}`;
+            //   return `http://localhost:3000/api/v1/users${path}`;
                 // this is for backend before live the backend folder of the project on server(render)
 
                 return `https://edu-nnect-4.onrender.com/api/v1/users${path}`; 
