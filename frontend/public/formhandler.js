@@ -35,20 +35,20 @@ async function handleSignup(event) {
 
         //this is for backend before live the backend folder of the project on server(render)
 
-       
+       /*
         case 'student': apiUrl = 'http://localhost:3000/api/v1/users/ragister'; break;
         case 'teacher': apiUrl = 'http://localhost:3000/api/v1/teachers/ragister'; break;
         case 'admin': apiUrl = 'http://localhost:3000/api/v1/admins/ragister'; break;
     
-       
+       */
 
         //this is for backend After live the backend folder of the project on server(render)
-        /*
+         
         case 'student': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/users/ragister'; break;
         case 'teacher': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/teachers/ragister'; break;
         case 'admin': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/admins/ragister'; break;
        
-        */
+         
 
         default:
             alert('Please select a user type.');
