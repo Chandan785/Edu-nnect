@@ -44,9 +44,9 @@ async function handleSignup(event) {
 
         //this is for backend After live the backend folder of the project on server(render)
 
-        case 'student': apiUrl = 'https://educonnect-backend-e3wl.onrender.com/api/v1/users/ragister'; break;
-        case 'teacher': apiUrl = 'https://educonnect-backend-e3wl.onrender.com/api/v1/teachers/ragister'; break;
-        case 'admin': apiUrl = 'https://educonnect-backend-e3wl.onrender.com/api/v1/admins/ragister'; break;
+        case 'student': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/users/ragister'; break;
+        case 'teacher': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/teachers/ragister'; break;
+        case 'admin': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/admins/ragister'; break;
        
 
         default:
@@ -115,9 +115,9 @@ async function handleLogin(event) {
         */
 
         //this is for backend After live the backend folder of the project on server(render)
-        case 'student': apiUrl = 'https://educonnect-backend-e3wl.onrender.com/api/v1/users/login'; redirectUrl = 'student-dashboard.html'; break;
-        case 'teacher': apiUrl = 'https://educonnect-backend-e3wl.onrender.com/api/v1/teachers/login'; redirectUrl = 'teacher-dashboard.html'; break;
-        case 'admin': apiUrl = 'https://educonnect-backend-e3wl.onrender.com/api/v1/admins/login'; redirectUrl = 'admin-dashboard.html'; break;
+        case 'student': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/users/login'; redirectUrl = 'student-dashboard.html'; break;
+        case 'teacher': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/teachers/login'; redirectUrl = 'teacher-dashboard.html'; break;
+        case 'admin': apiUrl = 'https://edu-nnect-4.onrender.com/api/v1/admins/login'; redirectUrl = 'admin-dashboard.html'; break;
         
         default:
             alert('Please select a user type.');
