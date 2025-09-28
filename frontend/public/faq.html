@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - EduPortal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f1f5f9; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out; }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4 md:p-8">
+        <div class="mb-6">
+            <a href="student-dashboard.html" class="text-indigo-600 hover:text-indigo-800 font-medium transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Dashboard
+            </a>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+            <div class="text-center mb-10">
+                <h1 class="text-4xl font-bold text-gray-800">Frequently Asked Questions</h1>
+                <p class="text-gray-500 mt-2">Find answers to common questions about the EduPortal.</p>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-question w-full flex justify-between items-center text-left text-lg font-medium text-gray-800 hover:text-indigo-600">
+                        <span>How do I update my profile information?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600">
+                        <p>You can update your profile by logging into your dashboard, clicking the "Settings" button in the sidebar, and modifying your details in the pop-up modal. Your changes are saved instantly.</p>
+                    </div>
+                </div>
+
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-question w-full flex justify-between items-center text-left text-lg font-medium text-gray-800 hover:text-indigo-600">
+                        <span>Where can I view my attendance?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600">
+                        <p>Your attendance records can be accessed from your main dashboard by clicking on the "View Attendance" card. This will show you a detailed breakdown by subject.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="faq-question w-full flex justify-between items-center text-left text-lg font-medium text-gray-800 hover:text-indigo-600">
+                        <span>How do I contact a teacher?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600">
+                        <p>You can search for teacher profiles and view their contact information or office hours. Additionally, you can use the internal messaging system to send them a direct message.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordion = document.getElementById('faq-accordion');
+            accordion.addEventListener('click', (e) => {
+                const questionButton = e.target.closest('.faq-question');
+                if (questionButton) {
+                    const answer = questionButton.nextElementSibling;
+                    const icon = questionButton.querySelector('i');
+
+                    questionButton.classList.toggle('text-indigo-600');
+                    icon.classList.toggle('rotate-180');
+
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -10,8 +10,13 @@ import {
     updateUserAvtar, 
     updateUserCoverImage,
     getUserChennalProfile,
-    WatchHistory} from "../controllers/user.controller.js";
+    WatchHistory,
+     
+} from "../controllers/user.controller.js";
+ 
     
+
+import { submitFeedback } from "../controllers/feedback.controller.js";
 import  {upload} from "../middleware/multermiddleware.js"; // Assuming you have a multer setup for file uploads
 const router = Router();
 import { verifyJWT } from "../middleware/auth.middleware.js";
@@ -35,7 +40,7 @@ router.route('/ragister').post(
     router.route("/update-avatar").patch(verifyJWT, upload.single("avatar"),updateUserAvtar);
     router.route("/updatecoverimage").patch(verifyJWT,upload.single("coverImage"),updateUserCoverImage);
     router.route("/c/:Username").get(verifyJWT,getUserChennalProfile)
-    router.route("/userhistory").get(verifyJWT,WatchHistory)
-
+   router.route("/userhistory").get(verifyJWT,WatchHistory)
+   router.route("/feedback").post(verifyJWT, submitFeedback);
 
 export default router;

@@ -7,6 +7,7 @@ import jwt from "jsonwebtoken";
 import { Subscription } from "../models/subscription.model.js";
 import mongoose, { Mongoose } from "mongoose";
 import { application } from "express";
+ 
 
 const registerUser = asyncHandler(async (req, res) => {
 
@@ -485,7 +486,8 @@ export { registerUser,
    updateUserAvtar,
   updateUserCoverImage,
   getUserChennalProfile,
-  WatchHistory
+  WatchHistory,
+  
 };
 
 
