@@ -1,12 +1,16 @@
-// Global teacher data
+// Global data
 let allTeachers = [];
 let allDepartments = [];
 
 // DOM elements
 const searchButton = document.getElementById("searchButton");
-const teacherNameInput = document.getElementById("teacherName");
 const resultsDiv = document.getElementById("results");
 const welcomeMessage = document.getElementById("welcomeMessage");
+
+// Teacher Name search elements
+const teacherContainer = document.getElementById("teacher-container");
+const teacherNameInput = document.getElementById("teacherNameInput");
+const teacherNameDropdown = document.getElementById("teacherNameDropdown");
 
 // Department search elements
 const departmentContainer = document.getElementById("department-container");
@@ -32,9 +36,12 @@ async function fetchAndSetup() {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     allTeachers = await response.json();
     
-    allDepartments = [...new Set(allTeachers.map(teacher => teacher.department))].sort();
+    // Populate both searchable dropdowns
+    populateTeacherNameDropdown();
     
+    allDepartments = [...new Set(allTeachers.map(teacher => teacher.department))].sort();
     populateDepartmentDropdown();
+
   } catch (error) {
     console.error("Could not fetch teacher data:", error);
     resultsDiv.innerHTML = `<p class="text-center text-red-600">Error loading teacher data.</p>`;
@@ -43,9 +50,28 @@ async function fetchAndSetup() {
 
 /**
  * -----------------------------------------------------
- * Searchable Department Dropdown Logic - CORRECTED
+ * Searchable Dropdown Logic
  * -----------------------------------------------------
  */
+
+// NEW: Function to populate the teacher name dropdown
+function populateTeacherNameDropdown() {
+  teacherNameDropdown.innerHTML = '';
+  allTeachers.forEach(teacher => {
+    const optionDiv = document.createElement('div');
+    optionDiv.textContent = teacher.name;
+    optionDiv.className = 'p-3 hover:bg-indigo-100 cursor-pointer transition-all';
+    
+    optionDiv.addEventListener('click', () => {
+      teacherNameInput.value = teacher.name;
+      teacherNameDropdown.classList.add('hidden');
+    });
+    
+    teacherNameDropdown.appendChild(optionDiv);
+  });
+}
+
+// Function to populate the department dropdown
 function populateDepartmentDropdown() {
   departmentDropdown.innerHTML = '';
   allDepartments.forEach(dept => {
@@ -54,54 +80,50 @@ function populateDepartmentDropdown() {
     optionDiv.className = 'p-3 hover:bg-indigo-100 cursor-pointer transition-all';
     
     optionDiv.addEventListener('click', () => {
-      departmentSearchInput.value = dept; // Set input value to the selected department
-      departmentDropdown.classList.add('hidden'); // Hide dropdown
-      // **CHANGE**: The automatic `performSearch()` call has been REMOVED from here.
+      departmentSearchInput.value = dept;
+      departmentDropdown.classList.add('hidden');
     });
     
     departmentDropdown.appendChild(optionDiv);
   });
 }
 
-// Show dropdown when user clicks into the search box
-departmentSearchInput.addEventListener('focus', () => {
-  departmentDropdown.classList.remove('hidden');
-});
-
-// Filter departments as user types
-departmentSearchInput.addEventListener('input', () => {
-  const query = departmentSearchInput.value.toLowerCase();
-  const options = departmentDropdown.getElementsByTagName('div');
-  
+// Event listeners for the teacher name dropdown
+teacherNameInput.addEventListener('focus', () => teacherNameDropdown.classList.remove('hidden'));
+teacherNameInput.addEventListener('input', () => {
+  const query = teacherNameInput.value.toLowerCase();
+  const options = teacherNameDropdown.getElementsByTagName('div');
   for (let option of options) {
-    const departmentName = option.textContent.toLowerCase();
-    if (departmentName.includes(query)) {
-      option.style.display = '';
-    } else {
-      option.style.display = 'none';
-    }
+    option.style.display = option.textContent.toLowerCase().includes(query) ? '' : 'none';
   }
 });
 
-// Hide dropdown if user clicks outside of it
+// Event listeners for the department dropdown
+departmentSearchInput.addEventListener('focus', () => departmentDropdown.classList.remove('hidden'));
+departmentSearchInput.addEventListener('input', () => {
+  const query = departmentSearchInput.value.toLowerCase();
+  const options = departmentDropdown.getElementsByTagName('div');
+  for (let option of options) {
+    option.style.display = option.textContent.toLowerCase().includes(query) ? '' : 'none';
+  }
+});
+
+// Generic listener to hide dropdowns when clicking outside
 document.addEventListener('click', (event) => {
   if (!departmentContainer.contains(event.target)) {
     departmentDropdown.classList.add('hidden');
   }
+  if (!teacherContainer.contains(event.target)) {
+    teacherNameDropdown.classList.add('hidden');
+  }
 });
-
 
 /**
  * -----------------------------------------------------
- * Main Search and Display Logic - CORRECTED
+ * Main Search and Display Logic
  * -----------------------------------------------------
  */
-
-// **CHANGE**: Only the search button triggers the search function.
 searchButton.addEventListener('click', performSearch);
-
-// **CHANGE**: The event listener for pressing "Enter" has been REMOVED.
-// teacherNameInput.addEventListener('keyup', (e) => { if (e.key === 'Enter') performSearch(); });
 
 function performSearch() {
   const nameQuery = teacherNameInput.value.toLowerCase().trim();
@@ -116,7 +138,7 @@ function performSearch() {
   }
 
   const filteredTeachers = allTeachers.filter(teacher => {
-    const nameMatch = teacher.name.toLowerCase().includes(nameQuery);
+    const nameMatch = !nameQuery || teacher.name.toLowerCase().includes(nameQuery);
     const departmentMatch = !departmentQuery || teacher.department.toLowerCase().includes(departmentQuery);
     return nameMatch && departmentMatch;
   });
@@ -143,7 +165,7 @@ function displayResults(teachers) {
 
 /**
  * -----------------------------------------------------
- * Modal Logic for Timetable
+ * Modal Logic (No changes here)
  * -----------------------------------------------------
  */
 function showTimetable(teacherId) {
