@@ -3,165 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teacher Search & Timetable</title>
+  <title>Faculty Finder | University Portal</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .transition-all { transition: all 0.3s ease-in-out; }
+    /* Custom scrollbar for dropdown */
+    .department-dropdown::-webkit-scrollbar { width: 8px; }
+    .department-dropdown::-webkit-scrollbar-track { background: #f1f1f1; }
+    .department-dropdown::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+    .department-dropdown::-webkit-scrollbar-thumb:hover { background: #555; }
+  </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col items-center py-10">
-  <div class="w-full max-w-5xl px-6">
-    <h1 class="text-3xl font-bold text-center text-blue-800 mb-8">Search Teachers & View Timetable</h1>
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- Search Form -->
-    <div class="bg-white p-6 rounded-2xl shadow-md mb-10">
-      <form id="searchForm" class="grid md:grid-cols-3 gap-6">
-        <div>
-          <label for="department" class="block text-gray-700 font-semibold mb-2">Department</label>
-          <select id="department" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
-            <option value="">Select Department</option>
-            <option value="CSE">CSE</option>
-            <option value="ECE">ECE</option>
-            <option value="EEE">EEE</option>
-            <option value="Mechanical">Mechanical</option>
-            <option value="Civil">Civil</option>
-          </select>
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <svg class="h-10 w-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.906 59.906 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0l-2.072-1.036A49.92 49.92 0 0012 2.25c4.97 0 9.57 1.223 13.5 3.379l-2.072 1.036M3.25 12.75l-1.63 8.14a1.5 1.5 0 001.63 1.63l8.14-1.63M20.75 12.75l1.63 8.14a1.5 1.5 0 01-1.63 1.63l-8.14-1.63" /></svg>
+        <h1 class="text-2xl font-bold text-gray-700">University Faculty Finder</h1>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border border-gray-200">
+      <h2 class="text-2xl font-semibold mb-2 text-gray-800">Find a Faculty Member</h2>
+      <p class="text-gray-500 mb-6">Search by name, department, or both.</p>
+      <div id="searchForm" class="grid md:grid-cols-4 gap-6">
+        <div class="md:col-span-2">
+          <label for="teacherName" class="block text-gray-700 font-medium mb-2">Teacher Name</label>
+          <div class="relative"><i class="fa fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i><input type="text" id="teacherName" placeholder="e.g., Dr. Priya Singh" class="w-full p-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition-all"></div>
         </div>
-
+        
         <div>
-          <label for="year" class="block text-gray-700 font-semibold mb-2">Year</label>
-          <select id="year" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
-            <option value="">Select Year</option>
-            <option value="1st">1st Year</option>
-            <option value="2nd">2nd Year</option>
-            <option value="3rd">3rd Year</option>
-            <option value="4th">4th Year</option>
-          </select>
+          <label for="departmentSearch" class="block text-gray-700 font-medium mb-2">Department</label>
+          <div class="relative" id="department-container">
+            <div class="relative">
+                <i class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                <input type="text" id="departmentSearch" placeholder="Search departments..." class="w-full p-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition-all">
+            </div>
+            <div id="departmentDropdown" class="department-dropdown absolute z-10 w-full bg-white border border-gray-300 rounded-lg mt-2 shadow-lg max-h-60 overflow-y-auto hidden">
+              </div>
+          </div>
         </div>
-
+        
         <div class="flex items-end">
-          <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-            Search
-          </button>
+          <button type="button" id="searchButton" class="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all flex items-center justify-center space-x-2"><i class="fa fa-search"></i><span>Search</span></button>
         </div>
-      </form>
+      </div>
     </div>
 
-    <!-- Results Section -->
-    <div id="results" class="w-full"></div>
-  </div>
-
-  <!-- Timetable Modal -->
-  <div id="timetableModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
-    <div class="bg-white w-11/12 max-w-xl p-6 rounded-lg shadow-xl relative">
-      <h2 class="text-xl font-bold mb-4" id="modalTeacherName">Timetable</h2>
-      <table class="w-full border text-sm">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="p-2 border">Day</th>
-            <th class="p-2 border">9-10</th>
-            <th class="p-2 border">10-11</th>
-            <th class="p-2 border">11-12</th>
-          </tr>
-        </thead>
-        <tbody id="timetableBody">
-          <!-- Timetable rows will be inserted here -->
-        </tbody>
-      </table>
-      <button onclick="closeModal()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Close</button>
+    <div id="results" class="w-full">
+      <div id="welcomeMessage" class="text-center py-10 px-6 bg-white rounded-lg shadow-md border border-gray-200"><i class="fa fa-users text-5xl text-indigo-400 mb-4"></i><h3 class="text-2xl font-semibold text-gray-700">Welcome to the Faculty Finder</h3><p class="text-gray-500 mt-2">Use the search filters above to find faculty members and view their schedules.</p></div>
     </div>
+  </main>
+
+  <div id="timetableModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden p-4">
+    <div class="bg-white w-full max-w-4xl p-8 rounded-xl shadow-2xl relative transform transition-all duration-300 scale-95 opacity-0" id="modalContent"><div class="flex justify-between items-center mb-6"><h2 class="text-2xl font-bold text-indigo-700" id="modalTeacherName">Timetable</h2><button onclick="closeModal()" class="text-gray-500 hover:text-red-600 transition-all"><i class="fa fa-times text-2xl"></i></button></div><div id="timetableContainer" class="overflow-x-auto"></div></div>
   </div>
+  
+  <footer class="bg-white mt-16 border-t"><div class="container mx-auto px-6 py-4 text-center text-gray-500">&copy; 2025 University Name. All Rights Reserved.</div></footer>
 
-  <script>
-    const teachers = [
-      {
-        name: "Dr. A. Sharma",
-        department: "CSE",
-        year: "3rd",
-        timetable: {
-          Monday: ["OS", "CN", "Free"],
-          Tuesday: ["DBMS", "Free", "AI"],
-          Wednesday: ["Free", "CN", "DBMS"],
-        }
-      },
-      {
-        name: "Prof. B. Verma",
-        department: "CSE",
-        year: "3rd",
-        timetable: {
-          Monday: ["Math", "Free", "DS"],
-          Tuesday: ["DS", "AI", "Free"],
-          Wednesday: ["AI", "Math", "Free"],
-        }
-      },
-      {
-        name: "Ms. C. Mehta",
-        department: "ECE",
-        year: "2nd",
-        timetable: {
-          Monday: ["EDC", "Free", "Signals"],
-          Tuesday: ["Free", "VLSI", "Signals"],
-          Wednesday: ["VLSI", "EDC", "Free"],
-        }
-      }
-    ];
-
-    const searchForm = document.getElementById("searchForm");
-    const resultsDiv = document.getElementById("results");
-    const modal = document.getElementById("timetableModal");
-    const timetableBody = document.getElementById("timetableBody");
-    const modalTeacherName = document.getElementById("modalTeacherName");
-
-    searchForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const department = document.getElementById("department").value;
-      const year = document.getElementById("year").value;
-      resultsDiv.innerHTML = "";
-
-      if (department && year) {
-        const filtered = teachers.filter(t => t.department === department && t.year === year);
-
-        if (filtered.length === 0) {
-          resultsDiv.innerHTML = `<p class="text-center text-gray-600">No teachers found for ${department} - ${year}.</p>`;
-        } else {
-          resultsDiv.innerHTML = `
-            <h2 class="text-xl font-semibold mb-4 text-gray-800">Results:</h2>
-            <ul class="space-y-4">
-              ${filtered.map((teacher, index) => `
-                <li class="bg-white p-4 rounded-lg shadow-md border">
-                  <h3 class="text-lg font-medium text-blue-700">${teacher.name}</h3>
-                  <p class="text-sm text-gray-600">Department: ${teacher.department} | Year: ${teacher.year}</p>
-                  <button onclick="showTimetable(${index})" class="mt-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-                    View Timetable
-                  </button>
-                </li>
-              `).join('')}
-            </ul>
-          `;
-        }
-      } else {
-        resultsDiv.innerHTML = `<p class="text-center text-red-600 font-medium">Please select both Department and Year.</p>`;
-      }
-    });
-
-    function showTimetable(index) {
-      const teacher = teachers[index];
-      modalTeacherName.textContent = `Timetable - ${teacher.name}`;
-      timetableBody.innerHTML = "";
-
-      for (let day in teacher.timetable) {
-        const row = `
-          <tr>
-            <td class="p-2 border font-semibold">${day}</td>
-            ${teacher.timetable[day].map(slot => `<td class="p-2 border">${slot}</td>`).join("")}
-          </tr>
-        `;
-        timetableBody.innerHTML += row;
-      }
-
-      modal.classList.remove("hidden");
-    }
-
-    function closeModal() {
-      modal.classList.add("hidden");
-    }
-  </script>
+  <script src="timetable.js"></script>
 </body>
 </html>

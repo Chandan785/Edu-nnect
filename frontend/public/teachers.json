@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Aarav Sharma",
+    "school": "School of Computer Science & Engineering",
+    "department": "Artificial Intelligence & Machine Learning",
+    "cabin": "Block C, Room 301",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "AI Fundamentals", "location": "LT-1" },
+        { "time": "10-11", "activity": "Free (Available in Cabin)", "location": "Cabin 301" },
+        { "time": "11-12", "activity": "Project Mentoring", "location": "Lab 5" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Machine Learning", "location": "LT-2" },
+        { "time": "10-11", "activity": "AI Fundamentals", "location": "LT-1" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 301" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Research Meeting", "location": "Conf. Room A" },
+        { "time": "10-11", "activity": "Machine Learning", "location": "LT-2" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 301" }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Prof. Priya Singh",
+    "school": "School of Engineering",
+    "department": "Electronics and Communication Engineering",
+    "cabin": "Block A, Room 105",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Digital Circuits", "location": "LT-5" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 105" },
+        { "time": "11-12", "activity": "Analog Electronics", "location": "LT-6" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 105" },
+        { "time": "10-11", "activity": "Digital Circuits Lab", "location": "ECE Lab 1" },
+        { "time": "11-12", "activity": "Digital Circuits Lab", "location": "ECE Lab 1" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Analog Electronics", "location": "LT-6" },
+        { "time": "10-11", "activity": "Free (Dept. Meeting)", "location": "HOD Office" },
+        { "time": "11-12", "activity": "Project Guidance", "location": "Cabin 105" }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Dr. Rohan Gupta",
+    "school": "School of Computer Science & Engineering",
+    "department": "Data Science and Big Data",
+    "cabin": "Block C, Room 302",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Data Structures", "location": "LT-3" },
+            { "time": "10-11", "activity": "Big Data Analytics", "location": "LT-4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 302" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 302" },
+            { "time": "10-11", "activity": "Data Structures Lab", "location": "CS Lab 2" },
+            { "time": "11-12", "activity": "Data Structures Lab", "location": "CS Lab 2" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Big Data Analytics", "location": "LT-4" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 302" },
+            { "time": "11-12", "activity": "Mentoring", "location": "Cabin 302" }
+        ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Ms. Ananya Reddy",
+    "school": "School of Business",
+    "department": "Management",
+    "cabin": "Block B, Room 210",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Marketing Mgmt", "location": "SB-1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 210" },
+            { "time": "11-12", "activity": "Org. Behavior", "location": "SB-2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 210" },
+            { "time": "10-11", "activity": "Marketing Mgmt", "location": "SB-1" },
+            { "time": "11-12", "activity": "Case Study Session", "location": "Syndicate Room 3" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Org. Behavior", "location": "SB-2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 210" },
+            { "time": "11-12", "activity": "Student Presentations", "location": "Auditorium B" }
+        ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Prof. Vikram Patel",
+    "school": "School of Engineering",
+    "department": "Mechanical Engineering",
+    "cabin": "Block A, Room 112",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Thermodynamics", "location": "ME-LT1" },
+            { "time": "10-11", "activity": "Workshop Practice", "location": "ME Workshop" },
+            { "time": "11-12", "activity": "Workshop Practice", "location": "ME Workshop" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Fluid Mechanics", "location": "ME-LT2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 112" },
+            { "time": "11-12", "activity": "Thermodynamics", "location": "ME-LT1" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 112" },
+            { "time": "10-11", "activity": "Fluid Mechanics", "location": "ME-LT2" },
+            { "time": "11-12", "activity": "Project Review", "location": "Cabin 112" }
+        ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Dr. Sneha Desai",
+    "school": "School of Law",
+    "department": "Corporate Law",
+    "cabin": "Block D, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Contract Law", "location": "Moot Court" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Company Law", "location": "Law LT-1" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Jurisprudence", "location": "Law LT-2" },
+            { "time": "10-11", "activity": "Contract Law", "location": "Moot Court" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 101" },
+            { "time": "10-11", "activity": "Company Law", "location": "Law LT-1" },
+            { "time": "11-12", "activity": "Debate Club", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Mr. Arjun Mehta",
+    "school": "School of Finance and Commerce",
+    "department": "Accounting",
+    "cabin": "Block B, Room 205",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Financial Accounting", "location": "FC-1" },
+            { "time": "10-11", "activity": "Taxation", "location": "FC-2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 205" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 205" },
+            { "time": "10-11", "activity": "Corporate Accounting", "location": "FC-3" },
+            { "time": "11-12", "activity": "Financial Accounting", "location": "FC-1" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Taxation", "location": "FC-2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 205" },
+            { "time": "11-12", "activity": "Audit Simulation", "location": "Finance Lab" }
+        ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Dr. Isha Kapoor",
+    "school": "School of Biosciences and Technology",
+    "department": "Biotechnology & Bioengineering",
+    "cabin": "Block E, Room 108",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Genetics", "location": "Bio-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 108" },
+            { "time": "11-12", "activity": "Cell Biology", "location": "Bio-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Biochem Lab", "location": "Bio Lab 1" },
+            { "time": "10-11", "activity": "Biochem Lab", "location": "Bio Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 108" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Genetics", "location": "Bio-LT1" },
+            { "time": "10-11", "activity": "Cell Biology", "location": "Bio-LT2" },
+            { "time": "11-12", "activity": "Faculty Meeting", "location": "Conf. Room B" }
+        ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Prof. Sameer Khan",
+    "school": "School of Computer Science & Engineering",
+    "department": "Computer Network",
+    "cabin": "Block C, Room 305",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Network Protocols", "location": "CN-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 305" },
+            { "time": "11-12", "activity": "Cyber Security", "location": "CN-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Network Lab", "location": "Network Lab" },
+            { "time": "10-11", "activity": "Network Lab", "location": "Network Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 305" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Cyber Security", "location": "CN-LT2" },
+            { "time": "10-11", "activity": "Network Protocols", "location": "CN-LT1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 305" }
+        ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Ms. Divya Nair",
+    "school": "School of Media & Communication Studies",
+    "department": "Journalism",
+    "cabin": "Block F, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Print Media", "location": "Media-1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Broadcast Journalism", "location": "Media Studio" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 102" },
+            { "time": "10-11", "activity": "Print Media", "location": "Media-1" },
+            { "time": "11-12", "activity": "Reporting Workshop", "location": "Media Lab" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Broadcast Journalism", "location": "Media Studio" },
+            { "time": "10-11", "activity": "Guest Lecture Prep", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Dr. Farhan Ahmed",
+    "school": "School of Engineering",
+    "department": "Civil Engineering",
+    "cabin": "Block A, Room 201",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Structural Analysis", "location": "CE-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 201" },
+            { "time": "11-12", "activity": "Geotech Engg", "location": "CE-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Surveying Lab", "location": "CE Field" },
+            { "time": "10-11", "activity": "Surveying Lab", "location": "CE Field" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 201" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Structural Analysis", "location": "CE-LT1" },
+            { "time": "10-11", "activity": "Geotech Engg", "location": "CE-LT2" },
+            { "time": "11-12", "activity": "Project Work", "location": "Cabin 201" }
+        ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Prof. Meera Iyer",
+    "school": "School of Design",
+    "department": "Fashion Design",
+    "cabin": "Block G, Room 105",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "History of Costume", "location": "Design-1" },
+            { "time": "10-11", "activity": "Pattern Making", "location": "Design Studio A" },
+            { "time": "11-12", "activity": "Pattern Making", "location": "Design Studio A" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 105" },
+            { "time": "10-11", "activity": "Draping", "location": "Design Studio B" },
+            { "time": "11-12", "activity": "History of Costume", "location": "Design-1" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Draping", "location": "Design Studio B" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 105" },
+            { "time": "11-12", "activity": "Student Portfolio Review", "location": "Cabin 105" }
+        ]
+    }
+  },
+  {
+    "id": 13,
+    "name": "Chef. Karan Verma",
+    "school": "School of Hospitality",
+    "department": "Culinary Arts",
+    "cabin": "Block H, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Bakery & Patisserie", "location": "Training Kitchen 1" },
+            { "time": "10-11", "activity": "Bakery & Patisserie", "location": "Training Kitchen 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Food Production", "location": "Training Kitchen 2" },
+            { "time": "10-11", "activity": "Food Production", "location": "Training Kitchen 2" },
+            { "time": "11-12", "activity": "Menu Planning", "location": "Hospitality LT-1" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 101" },
+            { "time": "10-11", "activity": "Bakery & Patisserie", "location": "Training Kitchen 1" },
+            { "time": "11-12", "activity": "Dept. Coordination", "location": "Cabin 101" }
+        ]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Dr. Sunita Rao",
+    "school": "School of Medical and Allied Health Sciences",
+    "department": "Cardiovascular Therapy",
+    "cabin": "Block M, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Anatomy", "location": "Medical LT-1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 104" },
+            { "time": "11-12", "activity": "Physiology", "location": "Medical LT-2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Cardiology Basics", "location": "Medical LT-3" },
+            { "time": "10-11", "activity": "Anatomy", "location": "Medical LT-1" },
+            { "time": "11-12", "activity": "Clinical Practice", "location": "Attached Hospital" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 104" },
+            { "time": "10-11", "activity": "Physiology", "location": "Medical LT-2" },
+            { "time": "11-12", "activity": "Student Seminar", "location": "Seminar Hall C" }
+        ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Prof. Balaji Krishnan",
+    "school": "School of Agriculture",
+    "department": "Agronomy",
+    "cabin": "Block K, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Soil Science", "location": "Agri-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Field Crops", "location": "Agri-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Field Visit", "location": "University Farm" },
+            { "time": "10-11", "activity": "Field Visit", "location": "University Farm" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Soil Science", "location": "Agri-LT1" },
+            { "time": "10-11", "activity": "Field Crops", "location": "Agri-LT2" },
+            { "time": "11-12", "activity": "Research Discussion", "location": "Agri Lab" }
+        ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "Dr. Aisha Begum",
+    "school": "School of Computer Science & Engineering",
+    "department": "Software Engineering",
+    "cabin": "Block C, Room 308",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Software Engg.", "location": "LT-7" },
+        { "time": "10-11", "activity": "Agile Methodologies", "location": "LT-8" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 308" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "SE Lab", "location": "CS Lab 4" },
+        { "time": "10-11", "activity": "SE Lab", "location": "CS Lab 4" },
+        { "time": "11-12", "activity": "Software Engg.", "location": "LT-7" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 308" },
+        { "time": "10-11", "activity": "Agile Methodologies", "location": "LT-8" },
+        { "time": "11-12", "activity": "Project Sprint Meeting", "location": "Cabin 308" }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "Prof. Rajesh Kumar",
+    "school": "School of Engineering",
+    "department": "Electrical Engineering",
+    "cabin": "Block A, Room 115",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Power Systems", "location": "EE-LT1" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 115" },
+        { "time": "11-12", "activity": "Control Systems", "location": "EE-LT2" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Machines Lab", "location": "EE Lab 1" },
+        { "time": "10-11", "activity": "Machines Lab", "location": "EE Lab 1" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 115" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Control Systems", "location": "EE-LT2" },
+        { "time": "10-11", "activity": "Power Systems", "location": "EE-LT1" },
+        { "time": "11-12", "activity": "Student Consultation", "location": "Cabin 115" }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "Dr. Geeta Menon",
+    "school": "School of Artificial Intelligence",
+    "department": "Robotics",
+    "cabin": "Block C, Room 401",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Intro to Robotics", "location": "AI-LT1" },
+        { "time": "10-11", "activity": "Kinematics", "location": "AI-LT2" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 401" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 401" },
+        { "time": "10-11", "activity": "Robotics Lab", "location": "AI Lab 1" },
+        { "time": "11-12", "activity": "Robotics Lab", "location": "AI Lab 1" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Kinematics", "location": "AI-LT2" },
+        { "time": "10-11", "activity": "Intro to Robotics", "location": "AI-LT1" },
+        { "time": "11-12", "activity": "Research Group Meeting", "location": "Cabin 401" }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Prof. Suresh Yadav",
+    "school": "School of Business",
+    "department": "Finance",
+    "cabin": "Block B, Room 212",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Corporate Finance", "location": "SB-3" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 212" },
+        { "time": "11-12", "activity": "Investment Analysis", "location": "SB-4" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 212" },
+        { "time": "10-11", "activity": "Corporate Finance", "location": "SB-3" },
+        { "time": "11-12", "activity": "Financial Markets", "location": "Finance Lab" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Investment Analysis", "location": "SB-4" },
+        { "time": "10-11", "activity": "Mentoring", "location": "Cabin 212" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 212" }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Dr. Kavita Joshi",
+    "school": "School of Biosciences and Technology",
+    "department": "Food Science and Dietetics",
+    "cabin": "Block E, Room 110",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Nutrition Science", "location": "Bio-LT3" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 110" },
+        { "time": "11-12", "activity": "Food Chemistry", "location": "Bio-LT4" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Food Microbio. Lab", "location": "Bio Lab 2" },
+        { "time": "10-11", "activity": "Food Microbio. Lab", "location": "Bio Lab 2" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 110" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Nutrition Science", "location": "Bio-LT3" },
+        { "time": "10-11", "activity": "Food Chemistry", "location": "Bio-LT4" },
+        { "time": "11-12", "activity": "Diet Planning Workshop", "location": "Nutrition Lab" }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Prof. Alok Nath",
+    "school": "School of Law",
+    "department": "Criminal Law",
+    "cabin": "Block D, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Indian Penal Code", "location": "Law LT-3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "CrPC", "location": "Law LT-4" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Evidence Act", "location": "Moot Court" },
+            { "time": "10-11", "activity": "Indian Penal Code", "location": "Law LT-3" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 103" },
+            { "time": "10-11", "activity": "CrPC", "location": "Law LT-4" },
+            { "time": "11-12", "activity": "Legal Aid Clinic", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Ms. Nandini Bose",
+    "school": "School of Hospitality",
+    "department": "Hotel Management",
+    "cabin": "Block H, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Front Office Mgmt", "location": "Hospitality LT-2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 104" },
+            { "time": "11-12", "activity": "Housekeeping Ops", "location": "Model Room" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "F&B Service", "location": "Training Restaurant" },
+            { "time": "10-11", "activity": "F&B Service", "location": "Training Restaurant" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Front Office Mgmt", "location": "Hospitality LT-2" },
+            { "time": "10-11", "activity": "Housekeeping Ops", "location": "Model Room" },
+            { "time": "11-12", "activity": "Event Management", "location": "Seminar Hall A" }
+        ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Dr. Vijay Kumar",
+    "school": "School of Computer Science & Engineering",
+    "department": "Artificial Intelligence & Machine Learning",
+    "cabin": "Block C, Room 303",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Deep Learning", "location": "AI-LT3" },
+        { "time": "10-11", "activity": "NLP", "location": "AI-LT4" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 303" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 303" },
+        { "time": "10-11", "activity": "AI Lab", "location": "AI Lab 2" },
+        { "time": "11-12", "activity": "AI Lab", "location": "AI Lab 2" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Deep Learning", "location": "AI-LT3" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 303" },
+        { "time": "11-12", "activity": "NLP", "location": "AI-LT4" }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "Prof. Anjali Desai",
+    "school": "School of Engineering",
+    "department": "Electronics and Communication Engineering",
+    "cabin": "Block A, Room 106",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Signal Processing", "location": "LT-5" },
+        { "time": "10-11", "activity": "Communication Systems", "location": "LT-6" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 106" },
+        { "time": "10-11", "activity": "DSP Lab", "location": "ECE Lab 2" },
+        { "time": "11-12", "activity": "DSP Lab", "location": "ECE Lab 2" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Signal Processing", "location": "LT-5" },
+        { "time": "10-11", "activity": "Communication Systems", "location": "LT-6" },
+        { "time": "11-12", "activity": "Mentoring", "location": "Cabin 106" }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "name": "Dr. Sandeep Reddy",
+    "school": "School of Computer Science & Engineering",
+    "department": "Data Science and Big Data",
+    "cabin": "Block C, Room 304",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Data Mining", "location": "LT-3" },
+            { "time": "10-11", "activity": "Cloud Computing", "location": "LT-4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 304" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 304" },
+            { "time": "10-11", "activity": "Big Data Lab", "location": "CS Lab 3" },
+            { "time": "11-12", "activity": "Big Data Lab", "location": "CS Lab 3" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Data Mining", "location": "LT-3" },
+            { "time": "10-11", "activity": "Cloud Computing", "location": "LT-4" },
+            { "time": "11-12", "activity": "Project Review", "location": "Cabin 304" }
+        ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Ms. Ritu Sharma",
+    "school": "School of Business",
+    "department": "Human Resources",
+    "cabin": "Block B, Room 211",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "HR Management", "location": "SB-1" },
+            { "time": "10-11", "activity": "Training & Development", "location": "SB-2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 211" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 211" },
+            { "time": "10-11", "activity": "HR Management", "location": "SB-1" },
+            { "time": "11-12", "activity": "Recruitment Workshop", "location": "Syndicate Room 4" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Training & Development", "location": "SB-2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 211" },
+            { "time": "11-12", "activity": "Student Counseling", "location": "Cabin 211" }
+        ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Prof. Mohan Kumar",
+    "school": "School of Engineering",
+    "department": "Mechanical Engineering",
+    "cabin": "Block A, Room 113",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Manufacturing Tech", "location": "ME-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 113" },
+            { "time": "11-12", "activity": "Machine Design", "location": "ME-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "CAD/CAM Lab", "location": "ME Lab 1" },
+            { "time": "10-11", "activity": "CAD/CAM Lab", "location": "ME Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 113" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Manufacturing Tech", "location": "ME-LT1" },
+            { "time": "10-11", "activity": "Machine Design", "location": "ME-LT2" },
+            { "time": "11-12", "activity": "Dept Meeting", "location": "HOD Office" }
+        ]
+    }
+  },
+  {
+    "id": 28,
+    "name": "Dr. Preeti Verma",
+    "school": "School of Law",
+    "department": "Constitutional Law",
+    "cabin": "Block D, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Const. Law I", "location": "Law LT-1" },
+            { "time": "10-11", "activity": "Admin Law", "location": "Law LT-2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 102" },
+            { "time": "10-11", "activity": "Const. Law I", "location": "Law LT-1" },
+            { "time": "11-12", "activity": "Moot Court Practice", "location": "Moot Court" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Admin Law", "location": "Law LT-2" },
+            { "time": "10-11", "activity": "Research Guidance", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ]
+    }
+  },
+  {
+    "id": 29,
+    "name": "Mr. Harish Chandra",
+    "school": "School of Finance and Commerce",
+    "department": "Commerce",
+    "cabin": "Block B, Room 206",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Business Law", "location": "FC-1" },
+            { "time": "10-11", "activity": "Economics", "location": "FC-2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 206" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 206" },
+            { "time": "10-11", "activity": "Business Law", "location": "FC-1" },
+            { "time": "11-12", "activity": "Tutorial", "location": "FC-3" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Economics", "location": "FC-2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 206" },
+            { "time": "11-12", "activity": "Student Club Mtg", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 30,
+    "name": "Dr. Neha Agarwal",
+    "school": "School of Biosciences and Technology",
+    "department": "Biotechnology & Bioengineering",
+    "cabin": "Block E, Room 109",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Immunology", "location": "Bio-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 109" },
+            { "time": "11-12", "activity": "Molecular Biology", "location": "Bio-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Mol Bio Lab", "location": "Bio Lab 1" },
+            { "time": "10-11", "activity": "Mol Bio Lab", "location": "Bio Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 109" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Immunology", "location": "Bio-LT1" },
+            { "time": "10-11", "activity": "Molecular Biology", "location": "Bio-LT2" },
+            { "time": "11-12", "activity": "Journal Club", "location": "Seminar Hall B" }
+        ]
+    }
+  },
+  {
+    "id": 31,
+    "name": "Prof. Sanjay Kumar",
+    "school": "School of Computer Science & Engineering",
+    "department": "Computer Network",
+    "cabin": "Block C, Room 306",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Wireless Networks", "location": "CN-LT1" },
+            { "time": "10-11", "activity": "Cryptography", "location": "CN-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 306" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Security Lab", "location": "Network Lab" },
+            { "time": "10-11", "activity": "Security Lab", "location": "Network Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 306" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Wireless Networks", "location": "CN-LT1" },
+            { "time": "10-11", "activity": "Cryptography", "location": "CN-LT2" },
+            { "time": "11-12", "activity": "Project Mentoring", "location": "Cabin 306" }
+        ]
+    }
+  },
+  {
+    "id": 32,
+    "name": "Ms. Pooja Mishra",
+    "school": "School of Media & Communication Studies",
+    "department": "Public Relations",
+    "cabin": "Block F, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Corporate Comm.", "location": "Media-1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Media Ethics", "location": "Media-2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 103" },
+            { "time": "10-11", "activity": "PR Campaign Planning", "location": "Media Lab" },
+            { "time": "11-12", "activity": "PR Campaign Planning", "location": "Media Lab" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Corporate Comm.", "location": "Media-1" },
+            { "time": "10-11", "activity": "Media Ethics", "location": "Media-2" },
+            { "time": "11-12", "activity": "Guest Speaker Session", "location": "Auditorium C" }
+        ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "Dr. Anil Kumar",
+    "school": "School of Engineering",
+    "department": "Civil Engineering",
+    "cabin": "Block A, Room 202",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Transportation Engg", "location": "CE-LT1" },
+            { "time": "10-11", "activity": "Concrete Technology", "location": "CE-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 202" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Material Testing Lab", "location": "CE Lab 1" },
+            { "time": "10-11", "activity": "Material Testing Lab", "location": "CE Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 202" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Transportation Engg", "location": "CE-LT1" },
+            { "time": "10-11", "activity": "Concrete Technology", "location": "CE-LT2" },
+            { "time": "11-12", "activity": "Site Visit Prep", "location": "Cabin 202" }
+        ]
+    }
+  },
+  {
+    "id": 34,
+    "name": "Prof. Shreya Ghosh",
+    "school": "School of Design",
+    "department": "Graphic Design",
+    "cabin": "Block G, Room 106",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Typography", "location": "Design-2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 106" },
+            { "time": "11-12", "activity": "Digital Illustration", "location": "Design Lab A" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Digital Illustration", "location": "Design Lab A" },
+            { "time": "10-11", "activity": "Typography", "location": "Design-2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Branding", "location": "Design Studio C" },
+            { "time": "10-11", "activity": "Branding", "location": "Design Studio C" },
+            { "time": "11-12", "activity": "Portfolio Review", "location": "Cabin 106" }
+        ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "Chef. Anita Das",
+    "school": "School of Hospitality",
+    "department": "Culinary Arts",
+    "cabin": "Block H, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 102" },
+            { "time": "10-11", "activity": "Indian Cuisine", "location": "Training Kitchen 3" },
+            { "time": "11-12", "activity": "Indian Cuisine", "location": "Training Kitchen 3" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Kitchen Hygiene", "location": "Hospitality LT-1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Global Cuisine", "location": "Training Kitchen 4" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Global Cuisine", "location": "Training Kitchen 4" },
+            { "time": "10-11", "activity": "Global Cuisine", "location": "Training Kitchen 4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ]
+    }
+  },
+  {
+    "id": 36,
+    "name": "Dr. Manisha Singh",
+    "school": "School of Medical and Allied Health Sciences",
+    "department": "Physiotherapy",
+    "cabin": "Block M, Room 105",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Kinesiology", "location": "Medical LT-4" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 105" },
+            { "time": "11-12", "activity": "Electrotherapy", "location": "Medical LT-5" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Therapeutic Ex. Lab", "location": "Physio Lab" },
+            { "time": "10-11", "activity": "Therapeutic Ex. Lab", "location": "Physio Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 105" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Kinesiology", "location": "Medical LT-4" },
+            { "time": "10-11", "activity": "Electrotherapy", "location": "Medical LT-5" },
+            { "time": "11-12", "activity": "Clinical Observation", "location": "Attached Hospital" }
+        ]
+    }
+  },
+  {
+    "id": 37,
+    "name": "Prof. Rahul Tiwari",
+    "school": "School of Agriculture",
+    "department": "Horticulture",
+    "cabin": "Block K, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Olericulture", "location": "Agri-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Floriculture", "location": "Agri-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Nursery Management", "location": "University Nursery" },
+            { "time": "10-11", "activity": "Nursery Management", "location": "University Nursery" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Olericulture", "location": "Agri-LT1" },
+            { "time": "10-11", "activity": "Floriculture", "location": "Agri-LT2" },
+            { "time": "11-12", "activity": "Research Plot Visit", "location": "Research Farm" }
+        ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Dr. Leela Krishnan",
+    "school": "School of Computer Science & Engineering",
+    "department": "Software Engineering",
+    "cabin": "Block C, Room 309",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Software Testing", "location": "LT-7" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 309" },
+        { "time": "11-12", "activity": "DevOps", "location": "LT-8" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Testing Lab", "location": "CS Lab 4" },
+        { "time": "10-11", "activity": "Testing Lab", "location": "CS Lab 4" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 309" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "DevOps", "location": "LT-8" },
+        { "time": "10-11", "activity": "Software Testing", "location": "LT-7" },
+        { "time": "11-12", "activity": "Student Project Guidance", "location": "Cabin 309" }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "Prof. Arun Jha",
+    "school": "School of Engineering",
+    "department": "Electrical Engineering",
+    "cabin": "Block A, Room 116",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Electrical Machines", "location": "EE-LT1" },
+        { "time": "10-11", "activity": "Circuit Theory", "location": "EE-LT2" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 116" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 116" },
+        { "time": "10-11", "activity": "Circuit Lab", "location": "EE Lab 2" },
+        { "time": "11-12", "activity": "Circuit Lab", "location": "EE Lab 2" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Electrical Machines", "location": "EE-LT1" },
+        { "time": "10-11", "activity": "Circuit Theory", "location": "EE-LT2" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 116" }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "Dr. Smita Patil",
+    "school": "School of Artificial Intelligence",
+    "department": "Computer Vision",
+    "cabin": "Block C, Room 402",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Image Processing", "location": "AI-LT1" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 402" },
+        { "time": "11-12", "activity": "Pattern Recognition", "location": "AI-LT2" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "CV Lab", "location": "AI Lab 1" },
+        { "time": "10-11", "activity": "CV Lab", "location": "AI Lab 1" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 402" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Image Processing", "location": "AI-LT1" },
+        { "time": "10-11", "activity": "Pattern Recognition", "location": "AI-LT2" },
+        { "time": "11-12", "activity": "Research Seminar", "location": "Seminar Hall C" }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "Prof. Neeraj Chopra",
+    "school": "School of Business",
+    "department": "Operations",
+    "cabin": "Block B, Room 213",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Supply Chain Mgmt", "location": "SB-3" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 213" },
+        { "time": "11-12", "activity": "Operations Research", "location": "SB-4" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Simulation Lab", "location": "Biz Lab" },
+        { "time": "10-11", "activity": "Simulation Lab", "location": "Biz Lab" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 213" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Supply Chain Mgmt", "location": "SB-3" },
+        { "time": "10-11", "activity": "Operations Research", "location": "SB-4" },
+        { "time": "11-12", "activity": "Industry Visit Prep", "location": "Cabin 213" }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "name": "Dr. Bhavana Shah",
+    "school": "School of Biosciences and Technology",
+    "department": "Food Science and Dietetics",
+    "cabin": "Block E, Room 111",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Food Processing", "location": "Bio-LT3" },
+        { "time": "10-11", "activity": "Public Nutrition", "location": "Bio-LT4" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 111" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 111" },
+        { "time": "10-11", "activity": "Food Analysis Lab", "location": "Bio Lab 2" },
+        { "time": "11-12", "activity": "Food Analysis Lab", "location": "Bio Lab 2" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Public Nutrition", "location": "Bio-LT4" },
+        { "time": "10-11", "activity": "Food Processing", "location": "Bio-LT3" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 111" }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "name": "Prof. Gagan Mehra",
+    "school": "School of Computer Science & Engineering",
+    "department": "Artificial Intelligence & Machine Learning",
+    "cabin": "Block C, Room 310",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 310" },
+        { "time": "10-11", "activity": "Reinforcement Learning", "location": "AI-LT3" },
+        { "time": "11-12", "activity": "Neural Networks", "location": "AI-LT4" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Python for AI Lab", "location": "AI Lab 2" },
+        { "time": "10-11", "activity": "Python for AI Lab", "location": "AI Lab 2" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 310" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Neural Networks", "location": "AI-LT4" },
+        { "time": "10-11", "activity": "Reinforcement Learning", "location": "AI-LT3" },
+        { "time": "11-12", "activity": "Project Mentoring", "location": "Cabin 310" }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "name": "Dr. Swati Pillai",
+    "school": "School of Engineering",
+    "department": "Electronics and Communication Engineering",
+    "cabin": "Block A, Room 107",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "VLSI Design", "location": "LT-7" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 107" },
+        { "time": "11-12", "activity": "Embedded Systems", "location": "LT-8" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "VLSI Lab", "location": "ECE Lab 3" },
+        { "time": "10-11", "activity": "VLSI Lab", "location": "ECE Lab 3" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Embedded Systems", "location": "LT-8" },
+        { "time": "10-11", "activity": "VLSI Design", "location": "LT-7" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "name": "Prof. Manishankar Jha",
+    "school": "School of Computer Science & Engineering",
+    "department": "Data Science and Big Data",
+    "cabin": "Block C, Room 311",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 311" },
+            { "time": "10-11", "activity": "Database Management", "location": "LT-9" },
+            { "time": "11-12", "activity": "Business Intelligence", "location": "LT-10" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "DBMS Lab", "location": "CS Lab 3" },
+            { "time": "10-11", "activity": "DBMS Lab", "location": "CS Lab 3" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 311" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Database Management", "location": "LT-9" },
+            { "time": "10-11", "activity": "Business Intelligence", "location": "LT-10" },
+            { "time": "11-12", "activity": "Project Guidance", "location": "Cabin 311" }
+        ]
+    }
+  },
+  {
+    "id": 46,
+    "name": "Ms. Zainab Khan",
+    "school": "School of Business",
+    "department": "Marketing",
+    "cabin": "Block B, Room 214",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Consumer Behavior", "location": "SB-5" },
+            { "time": "10-11", "activity": "Digital Marketing", "location": "SB-6" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 214" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 214" },
+            { "time": "10-11", "activity": "Consumer Behavior", "location": "SB-5" },
+            { "time": "11-12", "activity": "Marketing Research", "location": "Biz Lab" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Digital Marketing", "location": "SB-6" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 214" },
+            { "time": "11-12", "activity": "Case Study Analysis", "location": "Syndicate Room 1" }
+        ]
+    }
+  },
+  {
+    "id": 47,
+    "name": "Prof. Chetan Bhagat",
+    "school": "School of Engineering",
+    "department": "Mechanical Engineering",
+    "cabin": "Block A, Room 114",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Heat Transfer", "location": "ME-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 114" },
+            { "time": "11-12", "activity": "IC Engines", "location": "ME-LT4" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Thermal Lab", "location": "ME Lab 2" },
+            { "time": "10-11", "activity": "Thermal Lab", "location": "ME Lab 2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 114" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "IC Engines", "location": "ME-LT4" },
+            { "time": "10-11", "activity": "Heat Transfer", "location": "ME-LT3" },
+            { "time": "11-12", "activity": "Dept Meeting", "location": "HOD Office" }
+        ]
+    }
+  },
+  {
+    "id": 48,
+    "name": "Dr. Ram Jethmalani",
+    "school": "School of Law",
+    "department": "IPR",
+    "cabin": "Block D, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Patent Law", "location": "Law LT-5" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 104" },
+            { "time": "11-12", "activity": "Copyright Law", "location": "Law LT-6" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Trademark Law", "location": "Moot Court" },
+            { "time": "10-11", "activity": "Patent Law", "location": "Law LT-5" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 104" },
+            { "time": "10-11", "activity": "Copyright Law", "location": "Law LT-6" },
+            { "time": "11-12", "activity": "IPR Workshop", "location": "Seminar Hall A" }
+        ]
+    }
+  },
+  {
+    "id": 49,
+    "name": "Mr. Sachin Tendulkar",
+    "school": "School of Finance and Commerce",
+    "department": "Finance",
+    "cabin": "Block B, Room 207",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Derivatives", "location": "FC-4" },
+            { "time": "10-11", "activity": "Portfolio Management", "location": "FC-5" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 207" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 207" },
+            { "time": "10-11", "activity": "Derivatives", "location": "FC-4" },
+            { "time": "11-12", "activity": "Stock Market Simulation", "location": "Finance Lab" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Portfolio Management", "location": "FC-5" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 207" },
+            { "time": "11-12", "activity": "Investment Club Mtg", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 50,
+    "name": "Dr. Kiran Bedi",
+    "school": "School of Biosciences and Technology",
+    "department": "Forensic Science",
+    "cabin": "Block E, Room 112",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Crime Scene Inv.", "location": "Bio-LT5" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 112" },
+            { "time": "11-12", "activity": "DNA Fingerprinting", "location": "Bio-LT6" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Forensic Lab", "location": "Bio Lab 3" },
+            { "time": "10-11", "activity": "Forensic Lab", "location": "Bio Lab 3" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 112" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Crime Scene Inv.", "location": "Bio-LT5" },
+            { "time": "10-11", "activity": "DNA Fingerprinting", "location": "Bio-LT6" },
+            { "time": "11-12", "activity": "Case Study Discussion", "location": "Seminar Hall B" }
+        ]
+    }
+  },
+  {
+    "id": 51,
+    "name": "Prof. Narendra Modi",
+    "school": "School of Computer Science & Engineering",
+    "department": "Computer Network",
+    "cabin": "Block C, Room 307",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Cloud Security", "location": "CN-LT3" },
+            { "time": "10-11", "activity": "Ethical Hacking", "location": "CN-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 307" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Penetration Testing Lab", "location": "Network Lab" },
+            { "time": "10-11", "activity": "Penetration Testing Lab", "location": "Network Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 307" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Cloud Security", "location": "CN-LT3" },
+            { "time": "10-11", "activity": "Ethical Hacking", "location": "CN-LT4" },
+            { "time": "11-12", "activity": "CTF Competition Prep", "location": "Cabin 307" }
+        ]
+    }
+  },
+  {
+    "id": 52,
+    "name": "Ms. Priyanka Chopra",
+    "school": "School of Media & Communication Studies",
+    "department": "Film Studies",
+    "cabin": "Block F, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "History of Cinema", "location": "Media-3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 104" },
+            { "time": "11-12", "activity": "Film Appreciation", "location": "Preview Theatre" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 104" },
+            { "time": "10-11", "activity": "History of Cinema", "location": "Media-3" },
+            { "time": "11-12", "activity": "Screenwriting Workshop", "location": "Media Lab" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Film Appreciation", "location": "Preview Theatre" },
+            { "time": "10-11", "activity": "Student Film Screening", "location": "Auditorium C" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ]
+    }
+  },
+  {
+    "id": 53,
+    "name": "Dr. A.P.J. Abdul Kalam",
+    "school": "School of Engineering",
+    "department": "Aerospace Engineering",
+    "cabin": "Block A, Room 203",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Aerodynamics", "location": "AE-LT1" },
+            { "time": "10-11", "activity": "Propulsion", "location": "AE-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 203" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Wind Tunnel Lab", "location": "AE Lab 1" },
+            { "time": "10-11", "activity": "Wind Tunnel Lab", "location": "AE Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 203" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Aerodynamics", "location": "AE-LT1" },
+            { "time": "10-11", "activity": "Propulsion", "location": "AE-LT2" },
+            { "time": "11-12", "activity": "Rocketry Club Mtg", "location": "Cabin 203" }
+        ]
+    }
+  },
+  {
+    "id": 54,
+    "name": "Prof. Amartya Sen",
+    "school": "School of Humanities",
+    "department": "Economics",
+    "cabin": "Block J, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Microeconomics", "location": "Hum-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Development Economics", "location": "Hum-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Macroeconomics", "location": "Hum-LT3" },
+            { "time": "10-11", "activity": "Microeconomics", "location": "Hum-LT1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 101" },
+            { "time": "10-11", "activity": "Development Economics", "location": "Hum-LT2" },
+            { "time": "11-12", "activity": "Economics Debate", "location": "Seminar Hall B" }
+        ]
+    }
+  },
+  {
+    "id": 55,
+    "name": "Chef. Sanjeev Kapoor",
+    "school": "School of Hospitality",
+    "department": "Culinary Arts",
+    "cabin": "Block H, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Advanced Garde Manger", "location": "Training Kitchen 5" },
+            { "time": "10-11", "activity": "Advanced Garde Manger", "location": "Training Kitchen 5" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Food & Wine Pairing", "location": "Training Restaurant" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Molecular Gastronomy", "location": "Demo Kitchen" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 103" },
+            { "time": "10-11", "activity": "Advanced Garde Manger", "location": "Training Kitchen 5" },
+            { "time": "11-12", "activity": "Recipe Development", "location": "Cabin 103" }
+        ]
+    }
+  },
+  {
+    "id": 56,
+    "name": "Dr. Devi Shetty",
+    "school": "School of Medical and Allied Health Sciences",
+    "department": "Cardiovascular Therapy",
+    "cabin": "Block M, Room 106",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Cardiac Cath Lab", "location": "Attached Hospital" },
+            { "time": "10-11", "activity": "Cardiac Cath Lab", "location": "Attached Hospital" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "ECG Interpretation", "location": "Medical LT-6" },
+            { "time": "10-11", "activity": "Echocardiography", "location": "Medical LT-7" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "ECG Interpretation", "location": "Medical LT-6" },
+            { "time": "10-11", "activity": "Echocardiography", "location": "Medical LT-7" },
+            { "time": "11-12", "activity": "Patient Case Review", "location": "Cabin 106" }
+        ]
+    }
+  },
+  {
+    "id": 57,
+    "name": "Prof. M.S. Swaminathan",
+    "school": "School of Agriculture",
+    "department": "Genetics and Plant Breeding",
+    "cabin": "Block K, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Plant Breeding", "location": "Agri-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Biotechnology", "location": "Agri-LT4" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Genetics Lab", "location": "Agri Lab 2" },
+            { "time": "10-11", "activity": "Genetics Lab", "location": "Agri Lab 2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Plant Breeding", "location": "Agri-LT3" },
+            { "time": "10-11", "activity": "Biotechnology", "location": "Agri-LT4" },
+            { "time": "11-12", "activity": "Research Symposium", "location": "Auditorium A" }
+        ]
+    }
+  },
+  {
+    "id": 58,
+    "name": "Dr. Shashi Tharoor",
+    "school": "School of Liberal Arts",
+    "department": "International Relations",
+    "cabin": "Block L, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Diplomacy", "location": "LA-LT1" },
+            { "time": "10-11", "activity": "Global Politics", "location": "LA-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 101" },
+            { "time": "10-11", "activity": "Diplomacy", "location": "LA-LT1" },
+            { "time": "11-12", "activity": "Model UN Training", "location": "Student Center" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Global Politics", "location": "LA-LT2" },
+            { "time": "10-11", "activity": "Writing Workshop", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ]
+    }
+  },
+  {
+    "id": 59,
+    "name": "Prof. C.N.R. Rao",
+    "school": "School of Basic Sciences",
+    "department": "Chemistry",
+    "cabin": "Block P, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Inorganic Chemistry", "location": "Chem-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Solid State Chemistry", "location": "Chem-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Chemistry Lab", "location": "Chem Lab 1" },
+            { "time": "10-11", "activity": "Chemistry Lab", "location": "Chem Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Inorganic Chemistry", "location": "Chem-LT1" },
+            { "time": "10-11", "activity": "Solid State Chemistry", "location": "Chem-LT2" },
+            { "time": "11-12", "activity": "Research Mentoring", "location": "Cabin 101" }
+        ]
+    }
+  },
+  {
+    "id": 60,
+    "name": "Dr. Sunita Williams",
+    "school": "School of Engineering",
+    "department": "Aerospace Engineering",
+    "cabin": "Block A, Room 204",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Spacecraft Design", "location": "AE-LT3" },
+            { "time": "10-11", "activity": "Orbital Mechanics", "location": "AE-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 204" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 204" },
+            { "time": "10-11", "activity": "CAD Lab", "location": "AE Lab 2" },
+            { "time": "11-12", "activity": "CAD Lab", "location": "AE Lab 2" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Spacecraft Design", "location": "AE-LT3" },
+            { "time": "10-11", "activity": "Orbital Mechanics", "location": "AE-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 204" }
+        ]
+    }
+  },
+  {
+    "id": 61,
+    "name": "Prof. Raghuram Rajan",
+    "school": "School of Business",
+    "department": "Finance",
+    "cabin": "Block B, Room 215",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "International Finance", "location": "SB-7" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 215" },
+        { "time": "11-12", "activity": "Monetary Policy", "location": "SB-8" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 215" },
+        { "time": "10-11", "activity": "International Finance", "location": "SB-7" },
+        { "time": "11-12", "activity": "Economic Outlook Forum", "location": "Auditorium A" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Monetary Policy", "location": "SB-8" },
+        { "time": "10-11", "activity": "Student Consultation", "location": "Cabin 215" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 215" }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "name": "Dr. Indira Hinduja",
+    "school": "School of Medical and Allied Health Sciences",
+    "department": "Obstetrics and Gynaecology",
+    "cabin": "Block M, Room 107",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Clinical Rounds", "location": "Attached Hospital" },
+            { "time": "10-11", "activity": "Clinical Rounds", "location": "Attached Hospital" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Reproductive Medicine", "location": "Medical LT-8" },
+            { "time": "10-11", "activity": "Gynaecology", "location": "Medical LT-9" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Reproductive Medicine", "location": "Medical LT-8" },
+            { "time": "10-11", "activity": "Gynaecology", "location": "Medical LT-9" },
+            { "time": "11-12", "activity": "Journal Club Meeting", "location": "Cabin 107" }
+        ]
+    }
+  },
+  {
+    "id": 63,
+    "name": "Prof. Harivansh Rai Bachchan",
+    "school": "School of Humanities",
+    "department": "Literature",
+    "cabin": "Block J, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Hindi Poetry", "location": "Hum-LT4" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Modern Indian Lit.", "location": "Hum-LT5" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "World Literature", "location": "Hum-LT6" },
+            { "time": "10-11", "activity": "Hindi Poetry", "location": "Hum-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 102" },
+            { "time": "10-11", "activity": "Modern Indian Lit.", "location": "Hum-LT5" },
+            { "time": "11-12", "activity": "Creative Writing Session", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 64,
+    "name": "Dr. E. Sreedharan",
+    "school": "School of Engineering",
+    "department": "Civil Engineering",
+    "cabin": "Block A, Room 205",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Project Management", "location": "CE-LT3" },
+            { "time": "10-11", "activity": "Urban Planning", "location": "CE-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 205" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Construction Tech Lab", "location": "CE Lab 2" },
+            { "time": "10-11", "activity": "Construction Tech Lab", "location": "CE Lab 2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 205" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Project Management", "location": "CE-LT3" },
+            { "time": "10-11", "activity": "Urban Planning", "location": "CE-LT4" },
+            { "time": "11-12", "activity": "Infrastructure Dev. Seminar", "location": "Seminar Hall C" }
+        ]
+    }
+  },
+  {
+    "id": 65,
+    "name": "Prof. Javed Akhtar",
+    "school": "School of Media & Communication Studies",
+    "department": "Film Studies",
+    "cabin": "Block F, Room 105",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Lyric Writing", "location": "Media-4" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 105" },
+            { "time": "11-12", "activity": "Scriptwriting", "location": "Media Lab" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Scriptwriting", "location": "Media Lab" },
+            { "time": "10-11", "activity": "Lyric Writing", "location": "Media-4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 105" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Poetry Session", "location": "Student Center" },
+            { "time": "10-11", "activity": "Student Mentoring", "location": "Cabin 105" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 105" }
+        ]
+    }
+  },
+  {
+    "id": 66,
+    "name": "Dr. Homi Bhabha",
+    "school": "School of Basic Sciences",
+    "department": "Physics",
+    "cabin": "Block P, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Quantum Mechanics", "location": "Phy-LT1" },
+            { "time": "10-11", "activity": "Nuclear Physics", "location": "Phy-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Physics Lab", "location": "Phy Lab 1" },
+            { "time": "10-11", "activity": "Physics Lab", "location": "Phy Lab 1" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Quantum Mechanics", "location": "Phy-LT1" },
+            { "time": "10-11", "activity": "Nuclear Physics", "location": "Phy-LT2" },
+            { "time": "11-12", "activity": "Research Colloquium", "location": "Seminar Hall A" }
+        ]
+    }
+  },
+  {
+    "id": 67,
+    "name": "Prof. Sabyasachi Mukherjee",
+    "school": "School of Design",
+    "department": "Fashion Design",
+    "cabin": "Block G, Room 107",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Indian Textiles", "location": "Design-3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 107" },
+            { "time": "11-12", "activity": "Couture Techniques", "location": "Design Studio D" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Couture Techniques", "location": "Design Studio D" },
+            { "time": "10-11", "activity": "Indian Textiles", "location": "Design-3" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Bridal Wear Workshop", "location": "Design Studio E" },
+            { "time": "10-11", "activity": "Bridal Wear Workshop", "location": "Design Studio E" },
+            { "time": "11-12", "activity": "Student Portfolio Review", "location": "Cabin 107" }
+        ]
+    }
+  },
+  {
+    "id": 68,
+    "name": "Dr. Tessy Thomas",
+    "school": "School of Engineering",
+    "department": "Aerospace Engineering",
+    "cabin": "Block A, Room 206",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Missile Guidance", "location": "AE-LT5" },
+            { "time": "10-11", "activity": "Control Systems", "location": "AE-LT6" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 206" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 206" },
+            { "time": "10-11", "activity": "Simulation Lab", "location": "AE Lab 2" },
+            { "time": "11-12", "activity": "Simulation Lab", "location": "AE Lab 2" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Missile Guidance", "location": "AE-LT5" },
+            { "time": "10-11", "activity": "Control Systems", "location": "AE-LT6" },
+            { "time": "11-12", "activity": "Project Mentoring", "location": "Cabin 206" }
+        ]
+    }
+  },
+  {
+    "id": 69,
+    "name": "Prof. Gita Gopinath",
+    "school": "School of Humanities",
+    "department": "Economics",
+    "cabin": "Block J, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "International Economics", "location": "Hum-LT7" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Public Finance", "location": "Hum-LT8" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Econometrics", "location": "Hum-LT9" },
+            { "time": "10-11", "activity": "International Economics", "location": "Hum-LT7" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 103" },
+            { "time": "10-11", "activity": "Public Finance", "location": "Hum-LT8" },
+            { "time": "11-12", "activity": "Research Seminar", "location": "Seminar Hall B" }
+        ]
+    }
+  },
+  {
+    "id": 70,
+    "name": "Dr. Soumya Swaminathan",
+    "school": "School of Medical and Allied Health Sciences",
+    "department": "Public Health",
+    "cabin": "Block M, Room 108",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Epidemiology", "location": "Medical LT-10" },
+            { "time": "10-11", "activity": "Biostatistics", "location": "Medical LT-11" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 108" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Community Health Visit", "location": "Rural Health Centre" },
+            { "time": "10-11", "activity": "Community Health Visit", "location": "Rural Health Centre" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 108" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Epidemiology", "location": "Medical LT-10" },
+            { "time": "10-11", "activity": "Biostatistics", "location": "Medical LT-11" },
+            { "time": "11-12", "activity": "Policy Discussion", "location": "Cabin 108" }
+        ]
+    }
+  },
+  {
+    "id": 71,
+    "name": "Prof. Anupam Kher",
+    "school": "School of Performing Arts",
+    "department": "Acting",
+    "cabin": "Block R, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Method Acting", "location": "Studio A" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Voice & Diction", "location": "Studio B" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Improvisation", "location": "Studio C" },
+            { "time": "10-11", "activity": "Method Acting", "location": "Studio A" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 101" },
+            { "time": "10-11", "activity": "Voice & Diction", "location": "Studio B" },
+            { "time": "11-12", "activity": "Scene Study", "location": "Black Box Theatre" }
+        ]
+    }
+  },
+  {
+    "id": 72,
+    "name": "Dr. Verghese Kurien",
+    "school": "School of Agriculture",
+    "department": "Dairy Technology",
+    "cabin": "Block K, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Milk Production", "location": "Agri-LT5" },
+            { "time": "10-11", "activity": "Dairy Chemistry", "location": "Agri-LT6" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Dairy Plant Visit", "location": "University Dairy" },
+            { "time": "10-11", "activity": "Dairy Plant Visit", "location": "University Dairy" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Milk Production", "location": "Agri-LT5" },
+            { "time": "10-11", "activity": "Dairy Chemistry", "location": "Agri-LT6" },
+            { "time": "11-12", "activity": "Cooperative Management", "location": "Seminar Hall A" }
+        ]
+    }
+  },
+  {
+    "id": 73,
+    "name": "Prof. Medha Patkar",
+    "school": "School of Social Sciences",
+    "department": "Social Work",
+    "cabin": "Block S, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Community Organization", "location": "SS-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Social Policy", "location": "SS-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Field Work", "location": "NGO Partner Site" },
+            { "time": "10-11", "activity": "Field Work", "location": "NGO Partner Site" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Community Organization", "location": "SS-LT1" },
+            { "time": "10-11", "activity": "Social Policy", "location": "SS-LT2" },
+            { "time": "11-12", "activity": "Activism Workshop", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 74,
+    "name": "Dr. C.V. Raman",
+    "school": "School of Basic Sciences",
+    "department": "Physics",
+    "cabin": "Block P, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Optics", "location": "Phy-LT3" },
+            { "time": "10-11", "activity": "Electromagnetism", "location": "Phy-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 103" },
+            { "time": "10-11", "activity": "Optics Lab", "location": "Phy Lab 2" },
+            { "time": "11-12", "activity": "Optics Lab", "location": "Phy Lab 2" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Electromagnetism", "location": "Phy-LT4" },
+            { "time": "10-11", "activity": "Optics", "location": "Phy-LT3" },
+            { "time": "11-12", "activity": "Journal Reading", "location": "Cabin 103" }
+        ]
+    }
+  },
+  {
+    "id": 75,
+    "name": "Prof. Ruskin Bond",
+    "school": "School of Liberal Arts",
+    "department": "Creative Writing",
+    "cabin": "Block L, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Short Story Writing", "location": "LA-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Nature Writing", "location": "University Gardens" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 102" },
+            { "time": "10-11", "activity": "Short Story Writing", "location": "LA-LT3" },
+            { "time": "11-12", "activity": "Peer Review Session", "location": "Writing Center" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Nature Writing", "location": "University Gardens" },
+            { "time": "10-11", "activity": "Meet the Author Session", "location": "Library" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ]
+    }
+  },
+  {
+    "id": 76,
+    "name": "Dr. A. Sivathanu Pillai",
+    "school": "School of Engineering",
+    "department": "Aerospace Engineering",
+    "cabin": "Block A, Room 207",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Avionics", "location": "AE-LT7" },
+            { "time": "10-11", "activity": "Flight Dynamics", "location": "AE-LT8" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 207" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Avionics Lab", "location": "AE Lab 3" },
+            { "time": "10-11", "activity": "Avionics Lab", "location": "AE Lab 3" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 207" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Flight Dynamics", "location": "AE-LT8" },
+            { "time": "10-11", "activity": "Avionics", "location": "AE-LT7" },
+            { "time": "11-12", "activity": "Student Project Review", "location": "Cabin 207" }
+        ]
+    }
+  },
+  {
+    "id": 77,
+    "name": "Prof. Arundhati Roy",
+    "school": "School of Humanities",
+    "department": "Sociology",
+    "cabin": "Block J, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Social Movements", "location": "Hum-LT10" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 104" },
+            { "time": "11-12", "activity": "Postcolonial Theory", "location": "Hum-LT11" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Gender Studies", "location": "Hum-LT12" },
+            { "time": "10-11", "activity": "Social Movements", "location": "Hum-LT10" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 104" },
+            { "time": "10-11", "activity": "Postcolonial Theory", "location": "Hum-LT11" },
+            { "time": "11-12", "activity": "Discussion Forum", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 78,
+    "name": "Dr. R.A. Mashelkar",
+    "school": "School of Basic Sciences",
+    "department": "Chemical Engineering",
+    "cabin": "Block P, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Fluid Mechanics", "location": "ChemEng-LT1" },
+            { "time": "10-11", "activity": "Mass Transfer", "location": "ChemEng-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Chem Engg Lab", "location": "ChemEng Lab" },
+            { "time": "10-11", "activity": "Chem Engg Lab", "location": "ChemEng Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Fluid Mechanics", "location": "ChemEng-LT1" },
+            { "time": "10-11", "activity": "Mass Transfer", "location": "ChemEng-LT2" },
+            { "time": "11-12", "activity": "Innovation Workshop", "location": "Seminar Hall C" }
+        ]
+    }
+  },
+  {
+    "id": 79,
+    "name": "Prof. Prasoon Joshi",
+    "school": "School of Media & Communication Studies",
+    "department": "Advertising",
+    "cabin": "Block F, Room 106",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Copywriting", "location": "Media-5" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 106" },
+            { "time": "11-12", "activity": "Brand Strategy", "location": "Media-6" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Ad Campaign Workshop", "location": "Media Lab" },
+            { "time": "10-11", "activity": "Ad Campaign Workshop", "location": "Media Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Copywriting", "location": "Media-5" },
+            { "time": "10-11", "activity": "Brand Strategy", "location": "Media-6" },
+            { "time": "11-12", "activity": "Client Pitch Simulation", "location": "Syndicate Room 2" }
+        ]
+    }
+  },
+  {
+    "id": 80,
+    "name": "Dr. Vandana Shiva",
+    "school": "School of Environmental Sciences",
+    "department": "Ecology",
+    "cabin": "Block T, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Biodiversity", "location": "Env-LT1" },
+            { "time": "10-11", "activity": "Environmental Policy", "location": "Env-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Field Ecology", "location": "University Bio Park" },
+            { "time": "10-11", "activity": "Field Ecology", "location": "University Bio Park" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Biodiversity", "location": "Env-LT1" },
+            { "time": "10-11", "activity": "Environmental Policy", "location": "Env-LT2" },
+            { "time": "11-12", "activity": "Sustainability Forum", "location": "Auditorium B" }
+        ]
+    }
+  },
+  {
+    "id": 81,
+    "name": "Prof. U.R. Ananthamurthy",
+    "school": "School of Liberal Arts",
+    "department": "Kannada Literature",
+    "cabin": "Block L, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Navya Movement", "location": "LA-LT4" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Folk Literature", "location": "LA-LT5" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Literary Criticism", "location": "LA-LT6" },
+            { "time": "10-11", "activity": "Navya Movement", "location": "LA-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 103" },
+            { "time": "10-11", "activity": "Folk Literature", "location": "LA-LT5" },
+            { "time": "11-12", "activity": "Translation Workshop", "location": "Writing Center" }
+        ]
+    }
+  },
+  {
+    "id": 82,
+    "name": "Dr. Aditi Pant",
+    "school": "School of Oceanography",
+    "department": "Marine Biology",
+    "cabin": "Block U, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Oceanography I", "location": "Ocean-LT1" },
+            { "time": "10-11", "activity": "Planktology", "location": "Ocean-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Marine Bio Lab", "location": "Ocean Lab" },
+            { "time": "10-11", "activity": "Marine Bio Lab", "location": "Ocean Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Oceanography I", "location": "Ocean-LT1" },
+            { "time": "10-11", "activity": "Planktology", "location": "Ocean-LT2" },
+            { "time": "11-12", "activity": "Research Expedition Planning", "location": "Cabin 101" }
+        ]
+    }
+  },
+  {
+    "id": 83,
+    "name": "Prof. Zubin Mehta",
+    "school": "School of Performing Arts",
+    "department": "Music",
+    "cabin": "Block R, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Orchestral Conducting", "location": "Rehearsal Hall A" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Music Theory", "location": "Music Room 1" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Symphony Rehearsal", "location": "Auditorium A" },
+            { "time": "10-11", "activity": "Symphony Rehearsal", "location": "Auditorium A" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Orchestral Conducting", "location": "Rehearsal Hall A" },
+            { "time": "10-11", "activity": "Music Theory", "location": "Music Room 1" },
+            { "time": "11-12", "activity": "Individual Tutoring", "location": "Cabin 102" }
+        ]
+    }
+  },
+  {
+    "id": 84,
+    "name": "Dr. Jagdish Chandra Bose",
+    "school": "School of Basic Sciences",
+    "department": "Botany",
+    "cabin": "Block P, Room 105",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Plant Physiology", "location": "Botany-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 105" },
+            { "time": "11-12", "activity": "Taxonomy", "location": "Botany-LT2" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Botany Lab", "location": "Botany Lab" },
+            { "time": "10-11", "activity": "Botany Lab", "location": "Botany Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 105" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Plant Physiology", "location": "Botany-LT1" },
+            { "time": "10-11", "activity": "Taxonomy", "location": "Botany-LT2" },
+            { "time": "11-12", "activity": "Herbarium Visit", "location": "University Herbarium" }
+        ]
+    }
+  },
+  {
+    "id": 85,
+    "name": "Prof. I.K. Gujral",
+    "school": "School of Social Sciences",
+    "department": "Political Science",
+    "cabin": "Block S, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Indian Foreign Policy", "location": "SS-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Comparative Politics", "location": "SS-LT4" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Public Administration", "location": "SS-LT5" },
+            { "time": "10-11", "activity": "Indian Foreign Policy", "location": "SS-LT3" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 102" },
+            { "time": "10-11", "activity": "Comparative Politics", "location": "SS-LT4" },
+            { "time": "11-12", "activity": "Debate on Current Affairs", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 86,
+    "name": "Dr. Meghnad Saha",
+    "school": "School of Basic Sciences",
+    "department": "Astrophysics",
+    "cabin": "Block P, Room 106",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Stellar Evolution", "location": "Astro-LT1" },
+            { "time": "10-11", "activity": "Cosmology", "location": "Astro-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Observatory Session", "location": "University Observatory" },
+            { "time": "10-11", "activity": "Observatory Session", "location": "University Observatory" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 106" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Stellar Evolution", "location": "Astro-LT1" },
+            { "time": "10-11", "activity": "Cosmology", "location": "Astro-LT2" },
+            { "time": "11-12", "activity": "Astrophysics Club Mtg", "location": "Cabin 106" }
+        ]
+    }
+  },
+  {
+    "id": 87,
+    "name": "Prof. M.F. Husain",
+    "school": "School of Fine Arts",
+    "department": "Painting",
+    "cabin": "Block V, Room 101",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Oil Painting", "location": "Painting Studio A" },
+            { "time": "10-11", "activity": "Oil Painting", "location": "Painting Studio A" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 101" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "History of Modern Art", "location": "Art-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 101" },
+            { "time": "11-12", "activity": "Life Drawing", "location": "Drawing Studio" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Life Drawing", "location": "Drawing Studio" },
+            { "time": "10-11", "activity": "History of Modern Art", "location": "Art-LT1" },
+            { "time": "11-12", "activity": "Critique Session", "location": "Cabin 101" }
+        ]
+    }
+  },
+  {
+    "id": 88,
+    "name": "Dr. Salim Ali",
+    "school": "School of Environmental Sciences",
+    "department": "Ornithology",
+    "cabin": "Block T, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Bird Anatomy", "location": "Env-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Avian Ecology", "location": "Env-LT4" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Bird Watching Trip", "location": "Nearby Sanctuary" },
+            { "time": "10-11", "activity": "Bird Watching Trip", "location": "Nearby Sanctuary" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Bird Anatomy", "location": "Env-LT3" },
+            { "time": "10-11", "activity": "Avian Ecology", "location": "Env-LT4" },
+            { "time": "11-12", "activity": "Data Analysis", "location": "Cabin 102" }
+        ]
+    }
+  },
+  {
+    "id": 89,
+    "name": "Prof. Birju Maharaj",
+    "school": "School of Performing Arts",
+    "department": "Dance",
+    "cabin": "Block R, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Kathak Practice", "location": "Dance Studio A" },
+            { "time": "10-11", "activity": "Kathak Practice", "location": "Dance Studio A" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "History of Indian Dance", "location": "PA-LT1" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Abhinaya Workshop", "location": "Dance Studio B" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Abhinaya Workshop", "location": "Dance Studio B" },
+            { "time": "10-11", "activity": "History of Indian Dance", "location": "PA-LT1" },
+            { "time": "11-12", "activity": "Choreography Session", "location": "Cabin 103" }
+        ]
+    }
+  },
+  {
+    "id": 90,
+    "name": "Dr. Vikram Sarabhai",
+    "school": "School of Basic Sciences",
+    "department": "Space Science",
+    "cabin": "Block P, Room 107",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Remote Sensing", "location": "Space-LT1" },
+            { "time": "10-11", "activity": "Satellite Communication", "location": "Space-LT2" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "GIS Lab", "location": "Space Lab" },
+            { "time": "10-11", "activity": "GIS Lab", "location": "Space Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Remote Sensing", "location": "Space-LT1" },
+            { "time": "10-11", "activity": "Satellite Communication", "location": "Space-LT2" },
+            { "time": "11-12", "activity": "ISRO Collaboration Mtg", "location": "Conf. Room A" }
+        ]
+    }
+  },
+  {
+    "id": 91,
+    "name": "Prof. Amrita Sher-Gil",
+    "school": "School of Fine Arts",
+    "department": "Painting",
+    "cabin": "Block V, Room 102",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Portrait Painting", "location": "Painting Studio B" },
+            { "time": "10-11", "activity": "Portrait Painting", "location": "Painting Studio B" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 102" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Color Theory", "location": "Art-LT2" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 102" },
+            { "time": "11-12", "activity": "Still Life", "location": "Drawing Studio" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Still Life", "location": "Drawing Studio" },
+            { "time": "10-11", "activity": "Color Theory", "location": "Art-LT2" },
+            { "time": "11-12", "activity": "Exhibition Curation", "location": "University Art Gallery" }
+        ]
+    }
+  },
+  {
+    "id": 92,
+    "name": "Dr. J.C. Mahindra",
+    "school": "School of Business",
+    "department": "Entrepreneurship",
+    "cabin": "Block B, Room 216",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "New Venture Creation", "location": "SB-9" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 216" },
+        { "time": "11-12", "activity": "Business Plan Dev.", "location": "Incubation Center" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Business Plan Dev.", "location": "Incubation Center" },
+        { "time": "10-11", "activity": "New Venture Creation", "location": "SB-9" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 216" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Venture Capital", "location": "SB-10" },
+        { "time": "10-11", "activity": "Startup Mentoring", "location": "Incubation Center" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 216" }
+      ]
+    }
+  },
+  {
+    "id": 93,
+    "name": "Prof. Satyajit Ray",
+    "school": "School of Media & Communication Studies",
+    "department": "Film Direction",
+    "cabin": "Block F, Room 107",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Cinematography", "location": "Media Studio" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 107" },
+            { "time": "11-12", "activity": "Editing Techniques", "location": "Editing Suite" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Mise-en-scène", "location": "Preview Theatre" },
+            { "time": "10-11", "activity": "Cinematography", "location": "Media Studio" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 107" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 107" },
+            { "time": "10-11", "activity": "Editing Techniques", "location": "Editing Suite" },
+            { "time": "11-12", "activity": "Student Film Review", "location": "Cabin 107" }
+        ]
+    }
+  },
+  {
+    "id": 94,
+    "name": "Dr. Har Gobind Khorana",
+    "school": "School of Biosciences and Technology",
+    "department": "Genetics",
+    "cabin": "Block E, Room 113",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Recombinant DNA Tech", "location": "Bio-LT7" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 113" },
+            { "time": "11-12", "activity": "Human Genetics", "location": "Bio-LT8" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Genetics Lab", "location": "Bio Lab 4" },
+            { "time": "10-11", "activity": "Genetics Lab", "location": "Bio Lab 4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 113" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Recombinant DNA Tech", "location": "Bio-LT7" },
+            { "time": "10-11", "activity": "Human Genetics", "location": "Bio-LT8" },
+            { "time": "11-12", "activity": "Research Paper Discussion", "location": "Seminar Hall B" }
+        ]
+    }
+  },
+  {
+    "id": 95,
+    "name": "Prof. Amrita Pritam",
+    "school": "School of Liberal Arts",
+    "department": "Punjabi Literature",
+    "cabin": "Block L, Room 104",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Modern Punjabi Poetry", "location": "LA-LT7" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 104" },
+            { "time": "11-12", "activity": "Punjabi Fiction", "location": "LA-LT8" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Folklore of Punjab", "location": "LA-LT9" },
+            { "time": "10-11", "activity": "Modern Punjabi Poetry", "location": "LA-LT7" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 104" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 104" },
+            { "time": "10-11", "activity": "Punjabi Fiction", "location": "LA-LT8" },
+            { "time": "11-12", "activity": "Poetry Recitation", "location": "Student Center" }
+        ]
+    }
+  },
+  {
+    "id": 96,
+    "name": "Dr. Sam Pitroda",
+    "school": "School of Engineering",
+    "department": "Telecommunication Engineering",
+    "cabin": "Block A, Room 108",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Wireless Communication", "location": "ECE-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 108" },
+            { "time": "11-12", "activity": "Optical Networking", "location": "ECE-LT4" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Telecom Lab", "location": "ECE Lab 4" },
+            { "time": "10-11", "activity": "Telecom Lab", "location": "ECE Lab 4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 108" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Wireless Communication", "location": "ECE-LT3" },
+            { "time": "10-11", "activity": "Optical Networking", "location": "ECE-LT4" },
+            { "time": "11-12", "activity": "Policy & Innovation Mtg", "location": "Conf. Room B" }
+        ]
+    }
+  },
+  {
+    "id": 97,
+    "name": "Prof. R.K. Narayan",
+    "school": "School of Humanities",
+    "department": "English Literature",
+    "cabin": "Block J, Room 105",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Indian Writing in English", "location": "Hum-LT13" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 105" },
+            { "time": "11-12", "activity": "The Novel", "location": "Hum-LT14" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Short Story Analysis", "location": "Hum-LT15" },
+            { "time": "10-11", "activity": "Indian Writing in English", "location": "Hum-LT13" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 105" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Free", "location": "Cabin 105" },
+            { "time": "10-11", "activity": "The Novel", "location": "Hum-LT14" },
+            { "time": "11-12", "activity": "Literary Club Meeting", "location": "Library" }
+        ]
+    }
+  },
+  {
+    "id": 98,
+    "name": "Dr. Subrahmanyan Chandrasekhar",
+    "school": "School of Basic Sciences",
+    "department": "Astrophysics",
+    "cabin": "Block P, Room 108",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "General Relativity", "location": "Astro-LT3" },
+            { "time": "10-11", "activity": "Black Holes", "location": "Astro-LT4" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 108" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Computational Astro Lab", "location": "Astro Lab" },
+            { "time": "10-11", "activity": "Computational Astro Lab", "location": "Astro Lab" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 108" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "General Relativity", "location": "Astro-LT3" },
+            { "time": "10-11", "activity": "Black Holes", "location": "Astro-LT4" },
+            { "time": "11-12", "activity": "Research Group Discussion", "location": "Cabin 108" }
+        ]
+    }
+  },
+  {
+    "id": 99,
+    "name": "Prof. Raja Ravi Varma",
+    "school": "School of Fine Arts",
+    "department": "Painting",
+    "cabin": "Block V, Room 103",
+    "timetable": {
+        "Monday": [
+            { "time": "9-10", "activity": "Academic Realism", "location": "Painting Studio C" },
+            { "time": "10-11", "activity": "Academic Realism", "location": "Painting Studio C" },
+            { "time": "11-12", "activity": "Free", "location": "Cabin 103" }
+        ],
+        "Tuesday": [
+            { "time": "9-10", "activity": "Art History (Indian)", "location": "Art-LT3" },
+            { "time": "10-11", "activity": "Free", "location": "Cabin 103" },
+            { "time": "11-12", "activity": "Composition", "location": "Drawing Studio" }
+        ],
+        "Wednesday": [
+            { "time": "9-10", "activity": "Composition", "location": "Drawing Studio" },
+            { "time": "10-11", "activity": "Art History (Indian)", "location": "Art-LT3" },
+            { "time": "11-12", "activity": "Gallery Visit", "location": "City Art Museum" }
+        ]
+    }
+  },
+  {
+    "id": 100,
+    "name": "Dr. Manmohan Singh",
+    "school": "School of Business",
+    "department": "Economics",
+    "cabin": "Block B, Room 217",
+    "timetable": {
+      "Monday": [
+        { "time": "9-10", "activity": "Economic Policy", "location": "SB-11" },
+        { "time": "10-11", "activity": "Free", "location": "Cabin 217" },
+        { "time": "11-12", "activity": "Global Economy", "location": "SB-12" }
+      ],
+      "Tuesday": [
+        { "time": "9-10", "activity": "Free", "location": "Cabin 217" },
+        { "time": "10-11", "activity": "Economic Policy", "location": "SB-11" },
+        { "time": "11-12", "activity": "Policy Debate", "location": "Syndicate Room 5" }
+      ],
+      "Wednesday": [
+        { "time": "9-10", "activity": "Global Economy", "location": "SB-12" },
+        { "time": "10-11", "activity": "Admin Duties", "location": "Cabin 217" },
+        { "time": "11-12", "activity": "Free", "location": "Cabin 217" }
+      ]
+    }
+  }
+]
